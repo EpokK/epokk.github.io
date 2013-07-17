@@ -1,3 +1,3 @@
-epokk.github.io
+Code &amp; Cuisine
 ===============
 http://epokk.github.io
