@@ -7,6 +7,8 @@ Il etait temps que je commence a ecrire un blog, sur mes passions, tout d'abord,
 
 ### Les techno utilisees
  * Github Page
+ * Google Font 'Noto Sans'
+ * Font Awesome
  * AngularJS
 
 ### Critiques ou suggestions

@@ -3,8 +3,9 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
@@ -21,22 +22,15 @@
       <div class="inner">
         <h1>Code &amp; Cuisine</h1>
       </div>
+      <a href="https://github.com/EpokK"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
     </header>
 
-    <div id="content-wrapper">
+    <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <!-- <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-          <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-          <pre><code>$ cd your_repo_root/repo_name
-            $ git fetch origin
-            $ git checkout gh-pages
-          </code></pre> -->
-
-          <article>
-            <h3>Ma configuration pour Sublime Text</h3>
+          <h2 ng-show="a2==false">Ma configuration pour Sublime Text <i class="icon-collapse-top" ng-click="a2=true"></i></h2>
+          <article ng-show="a2==true">
+            <h2>Ma configuration pour Sublime Text <i class="icon-collapse" ng-click="a2=false"></i></h2>
             <p>Petit deja tu aimais l'informatique (dans une cave), tu jouais aux jeux videos avec tes potes et tu essayais de comprendre quelques lignes de codes. Maintenant tu les comprends ces lignes, tu as grandis dans cet univers. C'est bien. Tu as debute en editant tes premiers fichiers avec vim, gedit ou encore notepad. Puis sont apparu des IDE avances tel que : Eclispe, Netbeans ou encore Aptana. Tu y a goute, mais au fur et a mesure de son utilisation, tu sentais que quelque chose t'echappait. Tu te sentais frustre, faible pour avoir suivi les conseils d'un collegue binoclar aux cheveux longs. Ce cote simple et limite que possedait tes premiers editeurs. Tu as peut etre basculer sur Notepad++, par la suite, le trouvant a ton gout ou meme, tu as compris que le developpement n'etais pas fait pour toi et vends des callecons / strings de couleur sur les marches. Mais tout ca c'est fini !</p>
             <img width="100%" src="images/sublime.png" alt="Sublime Text">
             <p>Si tu ne le sais pas encore, nous sommes en 2013 et un editeur de developpement est sorti, il se nomme Sublime Text. Il a connu un engouement aupres des developpeurs avec la version 2. Cet editeur de texte est code en C++ / Python par Jon Skinner et il est disponible sous toutes les plateformes (Mac, Linux et Windows). Pour tout ce qui est de l'installation (Package Control et autres plugins kikoolol) je te laisse trouver cela sur l'Internet. Ce que je veux te presenter ici dans cet article, c'est ma configuration. Tu peux la copier dans ton fichier de configuration () et te la peter. Je te laisse le choix egalement du color_scheme meme si j'apprecie actuellement l'excellent "Tomorrow".</p>
@@ -60,8 +54,9 @@
             <p>Le color_scheme "Tomorrow" et le theme "Phoenix" sont disponible via Package Control.</p>
           </article>
 
-          <article>
-            <h3>Le BOLD, c'est la vie</h3>
+          <h2 ng-show="a1==false">Le BOLD, c'est la vie <i class="icon-collapse-top" ng-click="a1=true"></i></h2>
+          <article ng-show="a1==true">
+            <h2>Le BOLD, c'est la vie <i class="icon-collapse" ng-click="a1=false"></i></h2>
             <img width="100%" src="images/karadocperceval.jpg" alt="Karadoc et Perceval">
             <p>Coder dans une cave a l'abris du soleil c'est bien mais il faut aussi savoir se ressourcer. Je ne compte pas te presenter la recette du riz au coca-cola ou autre mal bouffe. Ici tu lis le blog de quelqu'un qui aime se faire chier, qui aime se prendre la tete et faire les choses bien. Donc comme premier essai je te presente ma recette <strong>Crepe oignons champignons</strong>. Regales toi et impressionnes ta copine ou ta mere.</p>
             <h4>Ingredients</h4>
@@ -86,7 +81,9 @@
         </section>
 
         <aside id="sidebar">
-          <p><a href="https://github.com/EpokK" class="button"><small>Follow me on</small>GitHub</a><a href="https://twitter.com/_PandaJS" class="button"><small>Follow me on</small>Twitter</a></p>
+          <div><a style="font-size: 24px;" href="https://twitter.com/_PandaJS"><i class="icon-twitter"></i> Follow me</a></div>
+          <div><a style="font-size: 24px;" href="https://github.com/EpokK"><i class="icon-github"></i> Fork me</a></div>
+          <div><a style="font-size: 24px;" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
@@ -102,7 +99,8 @@
     <script type="text/javascript">
       myApp = angular.module("myApp",[]);
       myApp.controller("myCtrl", function($scope){
-
+        $scope.a1 = false;
+        $scope.a2 = false;
       });
     </script>
   </body>
