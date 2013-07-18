@@ -357,6 +357,10 @@ strong {
   font-weight: bold;
 }
 
+i {
+  font-style: italic;
+}
+
 /* MISC */
 .clearfix:after {
   clear: both;
