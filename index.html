@@ -28,9 +28,24 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2 ng-show="a2==false">Ma configuration pour Sublime Text <i class="icon-collapse-top" ng-click="a2=true"></i></h2>
+          <h2 ng-click="a3=!a3">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3==false, 'icon-collapse': a3==true}"></i></h2>
+          <article ng-show="a3==true">
+            <p>Depuis quelques mois, je travaille avec un framework JS que je trouve formidable. Il se nomme <strong>AngularJS</strong>. Je ne vais pas vous le presenter car bien d'autres sites l'ont deja fait. Si vous ne le connaissez pas encore je vous conseille vivement d'aller taper quelques lignes de code avec ce framework avant de lire la suite de cet article.</p>
+            <p>Ce que je souhaite partager, ce sont les <i>directives</i>. Une directive est un attribut, d'un element HTML, qui lui octroi des fonctionnalites supplementaires. AngularJS fourni deja un ensemble de directives pour effectuer la plupart des actions / interactions. Il s'enrichie au fur et a mesure des versions. Malgres ce packetage, il faut parfois en ecrire soit meme. Et comme ce besoin peut etre recurrent a travers vos projets, il est interessant de se creer une boite a directives.</p>
+            <p>Voici celles que j'utilise regulierement:</p>
+            <ul>
+              <li>ng-focus</li>
+              <li>ng-blur</li>
+              <li>ng-rightClick</li>
+              <li>ng-enter</li>
+              <li>ng-initFocus</li>
+              <li>ng-datePicker</li>
+            </ul>
+            <p>Si vous souhaitez en ajouter d'autres, faites des <i>pull request</i> sur <a href="https://github.com/EpokK/epokk.github.io" target="_blank">ce projet</a>. J'enrichirai cet article par la suite.</p>
+          </article>
+
+          <h2 ng-click="a2=!a2">Ma configuration pour Sublime Text <i ng-class="{'icon-collapse-top': a2==false, 'icon-collapse': a2==true}"></i></h2>
           <article ng-show="a2==true">
-            <h2>Ma configuration pour Sublime Text <i class="icon-collapse" ng-click="a2=false"></i></h2>
             <p>Petit deja tu aimais l'informatique (dans une cave), tu jouais aux jeux videos avec tes potes et tu essayais de comprendre quelques lignes de codes. Maintenant tu les comprends ces lignes, tu as grandis dans cet univers. C'est bien. Tu as debute en editant tes premiers fichiers avec vim, gedit ou encore notepad. Puis sont apparu des IDE avances tel que : Eclispe, Netbeans ou encore Aptana. Tu y a goute, mais au fur et a mesure de son utilisation, tu sentais que quelque chose t'echappait. Tu te sentais frustre, faible pour avoir suivi les conseils d'un collegue binoclar aux cheveux longs. Ce cote simple et limite que possedait tes premiers editeurs. Tu as peut etre basculer sur Notepad++, par la suite, le trouvant a ton gout ou meme, tu as compris que le developpement n'etais pas fait pour toi et vends des callecons / strings de couleur sur les marches. Mais tout ca c'est fini !</p>
             <img width="100%" src="images/sublime.png" alt="Sublime Text">
             <p>Si tu ne le sais pas encore, nous sommes en 2013 et un editeur de developpement est sorti, il se nomme Sublime Text. Il a connu un engouement aupres des developpeurs avec la version 2. Cet editeur de texte est code en C++ / Python par Jon Skinner et il est disponible sous toutes les plateformes (Mac, Linux et Windows). Pour tout ce qui est de l'installation (Package Control et autres plugins kikoolol) je te laisse trouver cela sur l'Internet. Ce que je veux te presenter ici dans cet article, c'est ma configuration. Tu peux la copier dans ton fichier de configuration () et te la peter. Je te laisse le choix egalement du color_scheme meme si j'apprecie actuellement l'excellent "Tomorrow".</p>
@@ -52,11 +67,11 @@
             </code></pre>
             <p>Tu peux telecharger l'excellente police "Source Code Pro" ici : https://github.com/adobe/source-code-pro</p>
             <p>Le color_scheme "Tomorrow" et le theme "Phoenix" sont disponible via Package Control.</p>
+            <p>Sublime Text est sorti en version 3 mais tous les plugins n'ont pas encore ete transfere dessus. Voici <a href="https://github.com/wbond/sublime_package_control/wiki/Sublime-Text-3-Compatible-Packages" target="_blank">la liste de ceux disponibles</a>.</p>
           </article>
 
-          <h2 ng-show="a1==false">Le BOLD, c'est la vie <i class="icon-collapse-top" ng-click="a1=true"></i></h2>
+          <h2 ng-click="a1=!a1">Le BOLD, c'est la vie <i ng-class="{'icon-collapse-top': a1==false, 'icon-collapse': a1==true}"></i></h2>
           <article ng-show="a1==true">
-            <h2>Le BOLD, c'est la vie <i class="icon-collapse" ng-click="a1=false"></i></h2>
             <img width="100%" src="images/karadocperceval.jpg" alt="Karadoc et Perceval">
             <p>Coder dans une cave a l'abris du soleil c'est bien mais il faut aussi savoir se ressourcer. Je ne compte pas te presenter la recette du riz au coca-cola ou autre mal bouffe. Ici tu lis le blog de quelqu'un qui aime se faire chier, qui aime se prendre la tete et faire les choses bien. Donc comme premier essai je te presente ma recette <strong>Crepe oignons champignons</strong>. Regales toi et impressionnes ta copine ou ta mere.</p>
             <h4>Ingredients</h4>
@@ -81,9 +96,9 @@
         </section>
 
         <aside id="sidebar">
-          <div><a style="font-size: 24px;" href="https://twitter.com/_PandaJS"><i class="icon-twitter"></i> Follow me</a></div>
-          <div><a style="font-size: 24px;" href="https://github.com/EpokK"><i class="icon-github"></i> Fork me</a></div>
-          <div><a style="font-size: 24px;" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
+          <div><a style="font-size: 24px;" target="_blank" href="https://twitter.com/_PandaJS"><i class="icon-twitter"></i> Follow me</a></div>
+          <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github"></i> Fork me</a></div>
+          <div><a style="font-size: 24px;" target="_blank" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
@@ -101,6 +116,7 @@
       myApp.controller("myCtrl", function($scope){
         $scope.a1 = false;
         $scope.a2 = false;
+        $scope.a3 = false;
       });
     </script>
     <script>
