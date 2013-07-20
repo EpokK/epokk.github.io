@@ -29,19 +29,31 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2 ng-click="a3=!a3">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3==false, 'icon-collapse': a3==true}"></i></h2>
-          <article ng-show="a3==true">
+          <h2 ng-click="a3.show=!a3.show">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3.show==false, 'icon-collapse': a3.show==true}"></i></h2>
+          <article ng-show="a3.show==true">
             <p>Depuis quelques mois, j'ai la chance de travailler avec un framework JS que je trouve formidable. Il se nomme <strong>AngularJS</strong>. Je ne vais pas vous le presenter car bien d'autres sites l'ont deja fait. Si vous ne le connaissez pas encore je vous conseille vivement d'aller taper quelques lignes de code avec ce framework avant de lire la suite de cet article. Comme ca apres, "t'es chaud" !</p>
             <p>Ce que je souhaite partager, ce sont les <i>directives</i>. Une directive est un attribut, d'un element HTML, qui lui octroi des fonctionnalites supplementaires : tel que lancer une action quand on clique sur celui-ci ou encore, repeter cet element autant de fois qu'il y a d'objet dans un tableau associe. AngularJS fourni deja un ensemble de directives pour effectuer la plupart des actions / interactions. Il s'enrichie au fur et a mesure des versions. Malgres ce packetage, il faut parfois en ecrire soit meme. Et comme ce besoin peut etre recurrent a travers vos projets, il est interessant de se creer une boite a directives.</p>
             <p>Voici celles que j'utilise regulierement:</p>
             <ul>
-              <li>ng-focus </li>
-              <li>ng-blur</li>
-              <li>ng-rightClick {% gist 6029276 %}</li>
-              <li>ng-enter</li>
-              <li>ng-initFocus</li>
-              <li>ng-datePicker</li>
+              <li><a href="" ng-click="a3.gist=1">ng-focus</a></li>
+              <li><a href="" ng-click="a3.gist=2">ng-blur</a></li>
+              <li><a href="" ng-click="a3.gist=3">ng-rightClick</a></li>
+              <li><a href="" ng-click="a3.gist=4">ng-enter</a></li>
+              <li><a href="" ng-click="a3.gist=5">ng-initFocus</a></li>
+              <li><a href="" ng-click="a3.gist=6">ng-datePicker</a></li>
+              <li><a href="" ng-click="a3.gist=7">ng-placeholder</a></li>
             </ul>
+
+            <div ng-switch on="a3.gist">
+              <div ng-switch-when="1"><script src="https://gist.github.com/EpokK/6044633.js"></script></div>
+              <div ng-switch-when="2"><script src="https://gist.github.com/EpokK/5787597.js"></script></div>
+              <div ng-switch-when="3"><script src="https://gist.github.com/EpokK/6029276.js"></script></div>
+              <div ng-switch-when="4"><script src="https://gist.github.com/EpokK/5884263.js"></script></div>
+              <div ng-switch-when="5"><script src="https://gist.github.com/EpokK/5857181.js"></script></div>
+              <div ng-switch-when="6"><script src="https://gist.github.com/EpokK/6038227.js"></script></div>
+              <div ng-switch-when="7"><script src="https://gist.github.com/EpokK/5884029.js"></script></div>
+            </div>
+
             <p>Si vous souhaitez en ajouter d'autres, faites des <i>pull request</i> sur <a href="https://github.com/EpokK/epokk.github.io" target="_blank">ce projet</a>. J'enrichirai cet article par la suite.</p>
           </article>
 
@@ -124,7 +136,10 @@
       myApp.controller("myCtrl", function($scope){
         $scope.a1 = true;
         $scope.a2 = true;
-        $scope.a3 = true;
+        $scope.a3 = {
+          show: true,
+          gist: 1
+        }
       });
     </script>
     <script>
