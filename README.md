@@ -1,8 +1,7 @@
 ![ScreenShot](http://s12.postimg.org/qwyoshjel/logo.png)
 
-
-http://epokk.github.io
-https://twitter.com/_PandaJS
+ * http://epokk.github.io
+ * https://twitter.com/_PandaJS
 
 ### Presentation
 Il etait temps que je commence a ecrire un blog, sur mes passions, tout d'abord, le developpement Web et d'autre par, la cuisine. J'essaye de raconter tout ca en humour pour pas te perdre. Mon compte twitter regorge de tips et tricks en JS et autres lib a la mode qui pourrait te servir sur tes repo prives.
