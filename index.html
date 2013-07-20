@@ -30,13 +30,13 @@
         <section id="main-content">
           <h2 ng-click="a3=!a3">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3==false, 'icon-collapse': a3==true}"></i></h2>
           <article ng-show="a3==true">
-            <p>Depuis quelques mois, je travaille avec un framework JS que je trouve formidable. Il se nomme <strong>AngularJS</strong>. Je ne vais pas vous le presenter car bien d'autres sites l'ont deja fait. Si vous ne le connaissez pas encore je vous conseille vivement d'aller taper quelques lignes de code avec ce framework avant de lire la suite de cet article. Comme ca apres, "t'es chaud" !</p>
+            <p>Depuis quelques mois, j'ai la chance de travailler avec un framework JS que je trouve formidable. Il se nomme <strong>AngularJS</strong>. Je ne vais pas vous le presenter car bien d'autres sites l'ont deja fait. Si vous ne le connaissez pas encore je vous conseille vivement d'aller taper quelques lignes de code avec ce framework avant de lire la suite de cet article. Comme ca apres, "t'es chaud" !</p>
             <p>Ce que je souhaite partager, ce sont les <i>directives</i>. Une directive est un attribut, d'un element HTML, qui lui octroi des fonctionnalites supplementaires : tel que lancer une action quand on clique sur celui-ci ou encore, repeter cet element autant de fois qu'il y a d'objet dans un tableau associe. AngularJS fourni deja un ensemble de directives pour effectuer la plupart des actions / interactions. Il s'enrichie au fur et a mesure des versions. Malgres ce packetage, il faut parfois en ecrire soit meme. Et comme ce besoin peut etre recurrent a travers vos projets, il est interessant de se creer une boite a directives.</p>
             <p>Voici celles que j'utilise regulierement:</p>
             <ul>
-              <li>ng-focus</li>
+              <li>ng-focus </li>
               <li>ng-blur</li>
-              <li>ng-rightClick</li>
+              <li>ng-rightClick {% gist 6029276 %}</li>
               <li>ng-enter</li>
               <li>ng-initFocus</li>
               <li>ng-datePicker</li>
@@ -121,9 +121,9 @@
     <script type="text/javascript">
       myApp = angular.module("myApp",[]);
       myApp.controller("myCtrl", function($scope){
-        $scope.a1 = false;
-        $scope.a2 = false;
-        $scope.a3 = false;
+        $scope.a1 = true;
+        $scope.a2 = true;
+        $scope.a3 = true;
       });
     </script>
     <script>
