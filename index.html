@@ -29,19 +29,28 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
+          <h2 ng-click="a4.show=!a4.show">Ractive.js : Alternative a AngularJS<i ng-class="{'icon-collapse-top': a4.show==false, 'icon-collapse': a4.show==true}"></i></h2>
+          <article ng-show="a4.show==true">
+            <p>Quelqu'un a ose ? Concurrencer Google sur son propre terrain ! Mais biensur et il existe plusieurs MVC Javascript bien connu apparu bien avant. BackboneJS par exemple ou encore le <i>rongeur</i> EmberJS. Dans cet article je ne souhaite pas vous presenter ces frameworks mais une <i>librairie</i> qui permet de manipuler le DOM autrement, comme le fais AngularJS.</p>
+            <p>Des le depart HTML n'a jamais ete concu pour creer des applications web dynamique. Des librairies tel que jQuery ou PrototypeJS ont grandement facilite l'utilisation de Javascript pour rendre vos pages <i>cool</i>. Il est alors facile de recuperer un element de votre page en JS et lui ajouter toute sorte d'event / function / boule a facette ... La librairie que je souhaite vous presenter permet de garder une relation / liaison forte entre votre code Javascript et la structure HTML. Ce dernier devient alors un <i>modele</i> pour votre application.</p>
+            <p>Rien de mieux qu'un <i>"Bye World"</i> pour commencer (oai j'essaye d'innover pour pas te perdre)</p>
+            HTML
+            http://plnkr.co/edit/QBce9kNC8PozcciPGUlw
+          </article>
+
           <h2 ng-click="a3.show=!a3.show">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3.show==false, 'icon-collapse': a3.show==true}"></i></h2>
           <article ng-show="a3.show==true">
             <p>Depuis quelques mois, j'ai la chance de travailler avec un framework JS que je trouve formidable. Il se nomme <strong>AngularJS</strong>. Je ne vais pas vous le presenter car bien d'autres sites l'ont deja fait. Si vous ne le connaissez pas encore je vous conseille vivement d'aller taper quelques lignes de code avec ce framework avant de lire la suite de cet article. Comme ca apres, "t'es chaud" !</p>
             <p>Ce que je souhaite partager, ce sont les <i>directives</i>. Une directive est un attribut, d'un element HTML, qui lui octroi des fonctionnalites supplementaires : tel que lancer une action quand on clique sur celui-ci ou encore, repeter cet element autant de fois qu'il y a d'objet dans un tableau associe. AngularJS fourni deja un ensemble de directives pour effectuer la plupart des actions / interactions. Il s'enrichie au fur et a mesure des versions. Malgres ce packetage, il faut parfois en ecrire soit meme. Et comme ce besoin peut etre recurrent a travers vos projets, il est interessant de se creer une boite a directives.</p>
             <p>Voici celles que j'utilise regulierement:</p>
             <ul>
-              <li><a href="" ng-click="a3.gist=1">ng-focus</a></li>
-              <li><a href="" ng-click="a3.gist=2">ng-blur</a></li>
-              <li><a href="" ng-click="a3.gist=3">ng-rightClick</a></li>
-              <li><a href="" ng-click="a3.gist=4">ng-enter</a></li>
-              <li><a href="" ng-click="a3.gist=5">ng-initFocus</a></li>
-              <li><a href="" ng-click="a3.gist=6">ng-datePicker</a></li>
-              <li><a href="" ng-click="a3.gist=7">ng-placeholder</a></li>
+              <li><a href="#" ng-click="a3.gist=1">ng-focus</a></li>
+              <li><a href="#" ng-click="a3.gist=2">ng-blur</a></li>
+              <li><a href="#" ng-click="a3.gist=3">ng-rightClick</a></li>
+              <li><a href="#" ng-click="a3.gist=4">ng-enter</a></li>
+              <li><a href="#" ng-click="a3.gist=5">ng-initFocus</a></li>
+              <li><a href="#" ng-click="a3.gist=6">ng-datePicker</a></li>
+              <li><a href="#" ng-click="a3.gist=7">ng-placeholder</a></li>
             </ul>
 
             <div ng-switch on="a3.gist">
@@ -110,7 +119,8 @@
 
         <aside id="sidebar">
           <div><a style="font-size: 24px;" target="_blank" href="https://twitter.com/_PandaJS"><i class="icon-twitter"></i> Follow me</a></div>
-          <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github"></i> Fork me</a></div>
+          <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github-sign"></i> Fork me</a></div>
+          <div><a style="font-size: 24px;" target="_blank" href="https://gist.github.com/EpokK"><i class="icon-github"></i> Gist me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
@@ -125,7 +135,7 @@
             <li>Qui regarde son nombril et ne se remet jamais en question.</li>
           </ul>
           <p>Ce blog est fait pour toi !</p>
-          <p>J'ecris ce blog pour partager mes decouvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve interessant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles. Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui meme en faisant des <i>pull request</i>.</p>
+          <p>J'ecris ce blog pour partager mes decouvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve interessant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles. Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui meme en faisant des <i>pull request</i>. Il est meme possible de corriger mes fautes d'orthographes si tu commences a avoir les yeux <span style="color: red;">rouges</span>.</p>
         </aside>
       </div>
     </div>
@@ -139,6 +149,9 @@
         $scope.a3 = {
           show: true,
           gist: 1
+        }
+        $scope.a4 = {
+          show: true
         }
       });
     </script>
