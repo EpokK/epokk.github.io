@@ -19,6 +19,6 @@ Il etait temps que je commence a ecrire un blog, sur mes passions, tout d'abord,
 J'accepte les critiques biensur, merci de rediger vos crachats en pull request. La correction de mes articles est egalement possible via ce meme principe.
 
 ### Merci a
-Aude pour m'avoir fait decouvrir la cuisine
-Mes parents pour m'avoir oriente vers l'informatique
-Julien pour sa correction orthographique et ses idees
+ * Aude pour m'avoir fait decouvrir la cuisine et partager ces recettes
+ * Mes parents pour m'avoir oriente vers l'informatique
+ * Julien pour sa correction orthographique et ses idees
