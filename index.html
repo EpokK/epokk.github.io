@@ -29,6 +29,11 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
+          <h2 ng-click="a5.show=!a5.show">Tarte aux mirabelles <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
+          <article ng-show="a5.show==true">
+            <p>C'est la saison et donc il faut en profiter. Apres avoir taffer une bonne semaine il faut savoir se ressourcer. Quoi de mieux qu'une bonne tarte ? En plus une tarte aux mirabelles. La recette est simple mais comptes sur moi pour la rendre compliquee.</p>
+          </article>
+
           <h2 ng-click="a4.show=!a4.show">Ractive.js : Alternative &agrave; AngularJS <i ng-class="{'icon-collapse-top': a4.show==false, 'icon-collapse': a4.show==true}"></i></h2>
           <article ng-show="a4.show==true">
             <img src="images/changement.png" alt="Le changement c'est maintenant" style="width: 100%;" />
@@ -142,20 +147,8 @@
         </aside>
       </div>
     </div>
-    <script type="text/javascript">
-      myApp = angular.module("myApp",[]);
-      myApp.controller("myCtrl", function($scope){
-        $scope.a1 = true;
-        $scope.a2 = true;
-        $scope.a3 = {
-          show: true,
-          gist: 1
-        }
-        $scope.a4 = {
-          show: true
-        }
-      });
-    </script>
+    <script type="text/javascript" src="javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
