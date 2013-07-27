@@ -35,7 +35,10 @@
             <p>Quelqu'un a os&eacute; ? Concurrencer Google sur son propre terrain ! Mais bien s&ucirc;r et il existe plusieurs MVC Javascript bien connus apparus bien avant. BackboneJS par exemple ou encore le <i>rongeur</i> EmberJS. Dans cet article je ne souhaite pas vous pr&eacute;senter ces frameworks mais une <i>librairie</i> qui permet de manipuler le DOM autrement, comme le fais AngularJS.</p>
             <p>D&egrave;s le depart HTML n'a jamais &eacute;t&eacute; con&ccedil;u pour cr&eacute;er des applications Web dynamiques. Des librairies tel que jQuery ou PrototypeJS ont grandement facilit&eacute;es l'utilisation de Javascript pour rendre vos pages <i>cool</i>. Il est alors facile de recuperer un element de votre page en JS et lui ajouter toute sorte d'event / function / boule a facette ... La librairie que je souhaite vous presenter permet de garder une relation / liaison forte entre votre code Javascript et la structure HTML. Ce dernier devient alors un <i>mod&egrave;le</i> pour votre application.</p>
             <p>Rien de mieux qu'un <i>"Bye World"</i> pour commencer (oai j'essaye d'innover pour pas te perdre)</p>
-            (http://plnkr.co/edit/QBce9kNC8PozcciPGUlw)
+            <script src="https://gist.github.com/EpokK/6094487.js"></script>
+            <p>Dans cet exemple, Ractive.js construit une representation parallele du DOM ou la valeur {{code}} de la structure HTML est donne par le JS via les parametres de l'objet ractive. Ainsi si cette valeur change, elle est modifie cote JS et HTML. Plus besoin d'ecouter votre element, ractive gere cette partie pour vous.</p>
+            <p>Pour ceux qui connaissent AngularJS, ce genre de manipulation leur parait tres familiaire, notament avec les liasons que vous pouvez creer avec $scope.VOTRE_VARIABLE. Cette librairie va au plus simple, pas besoin de rajouter des attributs specifiques dans vos elements, ni d'injections et dependance. Contrairement au framework de Google, Ractive.js peut etre parfaitement maitrise en une journee. Plusieurs <a href="http://learn.ractivejs.org">didacticiels interactifs</a> sont a votre disposition et meme un <a href="https://github.com/Rich-Harris/Ractive/wiki/60-second-setup">tuto de 60 secondes</a>.</p>
+            <p>Pour conclure, je pense que ractive.js est interessant a partir du moment ou vous ne voulez pas integrer un gros framework JS et que vous souhaitez facilement interagir avec votre DOM sans taper d'innombrable lignes code. Il se maitrise tres vite; encore plus vite pour les Angular fanboy.</p>
           </article>
 
           <h2 ng-click="a3.show=!a3.show">Quelques directives Angular <i ng-class="{'icon-collapse-top': a3.show==false, 'icon-collapse': a3.show==true}"></i></h2>
@@ -139,8 +142,6 @@
         </aside>
       </div>
     </div>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script type="text/javascript">
       myApp = angular.module("myApp",[]);
       myApp.controller("myCtrl", function($scope){
