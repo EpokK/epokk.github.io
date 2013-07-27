@@ -29,17 +29,36 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
+          <h2 ng-click="a5.show=!a5.show">Input like Gmail contact <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
+          <article ng-show="a5.show==true">
+            <p>Je travaille actuellement sur la realisation d'une fiche de contact. Je dois la mettre au gout du jour. Comme nous avons dernierement choisi d'utiliser AngularJS, j'ai donc la joie de pouvoir l'utiliser. Etant tres attentif a ce que propose Google en front-end, je me suis attele a realise les memes interactions que leur fiche de contact au niveau des champs d'entree.</p>
+            <p>C'est a dire:</p>
+            <ul>
+              <li>Un affichage de la valeur du champ par defaut</li>
+              <li>Un placeholder si la valeur du champ est vide</li>
+              <li>Montrer l'edition au survol du champ</li>
+              <li>Au focus sur le champ, afficher l'edition</li>
+              <li>Au blur sur le champ, sauvegarder sa valeur (AJAX)</li>
+              <li>Un ENTER dans le champ, sauvegarde egalement la valeur</li>
+              <li>Un tab donne le focus vers le champ suivant</li>
+            </ul>
+          </article>
+
           <h2 ng-click="a5.show=!a5.show">Tarte aux mirabelles <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
           <article ng-show="a5.show==true">
             <p>C'est la saison et donc il faut en profiter. Apres avoir taffer une bonne semaine il faut savoir se ressourcer. Quoi de mieux qu'une bonne tarte ? En plus une tarte aux mirabelles. La recette est simple mais comptes sur moi pour la rendre compliquee.</p>
             <h4>Ingredients</h4>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>250 g de farine</li>
+              <li>125 g de sucre semoule</li>
+              <li>1 oeuf</li>
+              <li>100g de beurre</li>
+              <li>1 zeste de citron</li>
+              <li>1 pincee de sel</li>
             </ul>
           </article>
+          <p>Dans un bol, délayez l'oeuf avec le sucre en poudre et une pincée de sel. Mettez la farine sur le plan de travail, faites un puits au centre, versez-y le contenu du bol et le zeste de citron. Versez le beurre mou. Malaxez le tout jusqu'à obtenir une pâte homogène. Etalez la au rouleau sur une feuille de papier cuisson. Ajoutez egalement une feuille de papier cuisson au dessus de la patte, pour garantir qu'elle ne brule pas. Faites cuire à four chaud 15 mn la patte dans le moule.</p>
+          <p>Decouper de maniere reguliere vos mirabelles et les disposer sur la patte precuite de maniere esthetique. Dans un boule, melanger deux oeufs, 150gr de sucre et deux cuillere a soupe de farine. Versez la preparation sur la futur tarte. Enfournez et surveillez pendant 30min (ce qui equivaut a une partie de ladder SC2, 6 pool interdit).</p>
 
           <h2 ng-click="a4.show=!a4.show">Ractive.js : Alternative &agrave; AngularJS <i ng-class="{'icon-collapse-top': a4.show==false, 'icon-collapse': a4.show==true}"></i></h2>
           <article ng-show="a4.show==true">
