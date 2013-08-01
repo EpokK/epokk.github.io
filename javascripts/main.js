@@ -17,6 +17,9 @@ myApp.controller("myCtrl", function($scope){
 		value: '',
 		save: ''
 	};
+	$scope.a7 = {
+		show: true
+	};
 });
 
 myApp.directive('ngBlur', function() {
