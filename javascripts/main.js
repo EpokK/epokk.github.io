@@ -1,4 +1,4 @@
-myApp = angular.module("myApp",[]);
+myApp = angular.module("myApp", []);
 myApp.controller("myCtrl", function($scope){
 	$scope.a1 = true;
 	$scope.a2 = true;
