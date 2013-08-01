@@ -13,6 +13,16 @@ myApp.controller("myCtrl", function($scope){
 		show: true
 	};
 	$scope.a6 = {
-		show: true
+		show: true,
+		value: '',
+		save: ''
+	};
+});
+
+myApp.directive('ngBlur', function() {
+	return function( scope, elem, attrs ) {
+		elem.bind('blur', function() {
+			scope.$apply(attrs.ngBlur);
+		});
 	};
 });

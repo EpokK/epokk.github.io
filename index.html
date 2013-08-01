@@ -42,6 +42,14 @@
               <li>Un ENTER dans le champ, sauvegarde egalement la valeur</li>
               <li>Un tab donne le focus vers le champ suivant</li>
             </ul>
+            <p>Et voici ma solution:</p>
+            <p>
+              <form ng-submit="a6.save=a6.value">
+                <input class="likeGoogle" placeholder="Rentrer une valeur ici" type="text" ng-model="a6.value" ng-blur="a6.save=a6.value" />
+              </form>
+            </p>
+            <p><strong>Valeur actuelle:</strong> {{a6.value}}</p>
+            <p><strong>Valeur sauvegarde:</strong> {{a6.save}}</p>
           </article>
 
           <h2 ng-click="a5.show=!a5.show">Tarte aux mirabelles <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
@@ -181,6 +189,7 @@
         </aside>
       </div>
     </div>
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/angular.min.js"></script>
     <script type="text/javascript" src="javascripts/main.js"></script>
     <script>
