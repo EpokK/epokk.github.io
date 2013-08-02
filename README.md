@@ -23,3 +23,4 @@ J'accepte les critiques biensur, merci de rediger vos crachats en pull request. 
  * Aude (@AudeMilliet) pour m'avoir fait decouvrir la cuisine et partager ces recettes
  * Mes parents pour m'avoir oriente vers l'informatique
  * Julien (@netvision73) pour sa correction orthographique et ses idees qu'il aura copie ailleurs
+ * Guillaume, mon ami d'enfance, qui corrige mes photes

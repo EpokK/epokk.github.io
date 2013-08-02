@@ -29,10 +29,10 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2 ng-click="a7.show=!a7.show">Pattes a la Carbonara <i ng-class="{'icon-collapse-top': a7.show==false, 'icon-collapse': a7.show==true}"></i></h2>
+          <h2 ng-click="a7.show=!a7.show">Pates a la Carbonara <i ng-class="{'icon-collapse-top': a7.show==false, 'icon-collapse': a7.show==true}"></i></h2>
           <article ng-show="a7.show==true" ng-animate="'slide'">
             <img src="images/carbone.png" alt="Carbone">
-            <p>"Pff tu vas rien m'apprendre, je fais des pattes carbo depuis que ma mere me laisse cuisiner". C'est ce que tu te dis, et tu as tors. Dans ton studio d'etudiant tu draggais deja avec ce plat, la miss n'osait pas te dire que c'etait ... degueux, trop gras, tu ajoutais de la creme fraiche, des lardons en plastiques et sortais des pattes trop cuites. A la fin tu as eu a peine un beco et tu n'as pas compris ... Moi je vais te dire pourquoi, car t'etais un noob. Oui c'est vrai, mais maintenant tu veux reprendre les choses en main, re inviter cette nana et re tenter ta chance !</p>
+            <p>"Pff tu vas rien m'apprendre, je fais des pates carbo depuis que ma mere me laisse cuisiner". C'est ce que tu te dis, et tu as tors. Dans ton studio d'etudiant tu draguais deja avec ce plat, la miss n'osait pas te dire que c'etait ... degueux, trop gras, tu ajoutais de la creme fraiche, des lardons en plastiques et sortais des pates trop cuites. A la fin tu as eu a peine un beco et tu n'as pas compris ... Moi je vais te dire pourquoi, car t'etais un noob. Oui c'est vrai, mais maintenant tu veux reprendre les choses en main, re inviter cette nana et re tenter ta chance !</p>
             <p>Avant toute chose il faut connaitre l'origine de cette recette pour mieux la comprendre, mieux la realiser. Cette recette est d'origine italienne. Les mama romaine cuisinaient ce plat aux mineurs pour qu'ils tiennent survivent a la durete de leur metier."Carbonara", "Carbo", "Carbone", pour la couleur noir que donnera le poivre sur ton plat et qui rappelera le charbon (carbone).</p>
             <ul>
               <li>1 oeuf par personne + 1 pour le plat (si vous etes deux ca fait donc trois oeufs)</li>
@@ -44,8 +44,8 @@
             </ul>
             <p>Dans une gros recipiant, faire bouillir de l'eau. Lorsque celle-ci boue, lance une grosse poignee de sel dedans et une dans ton dos (ca porte chance et ca fait chier ta meuf qui te bouche levier / la douche avec ses cheveux). Place delicatement tes spaghetti dans l'eau et laisse les cuir 1 min de moins que ce qui est indique sur ton paquet.</p>
             <p>Pendant ce temps, lance Call of duty, non surtout pas. Coupe en grossier morceaux la joue de porc que tu auras achete chez ton boucher; oai prends le temps d'aller chez lui, ces tarifs sont generalement competitif a ceux de carrefour / leclerc / casino et a force d'y aller il t'offrira de la bidoche ! De plus ca te fait connaitre / travailler ton quartier et ca fait bien chier les vieux de voir des jeunes prendre soin d'eux. Fais revenir la joue de porc dans une poele en veillant a ce qu'elle ne brule pas.</p>
-            <p>Dans un BOULE melange vigoureusement (la branlette ca sert) les jaunes d'oeufs avec trois pincees de poivres. Il faut que ta composition mousse. Rajoute deux cueilleres a soupe du bouillon venant de l'eau de tes pattes pour rendre le plat moins sec.</p>
-            <p>Une fois tes pattes cuitent, egouttent les et deverses le contenant de ton BOULE. Dresses meticuleusement ton assiette (creuse) avec une grosse poignee de patte et repartis les morceaux de viandes. Par dessus, rapes du parmesan dessus et sers tes assiettes.</p>
+            <p>Dans un BOULE melange vigoureusement (la branlette ca sert) les jaunes d'oeufs avec trois pincees de poivres. Il faut que ta composition mousse. Rajoute deux cueilleres a soupe du bouillon venant de l'eau de tes pates pour rendre le plat moins sec.</p>
+            <p>Une fois tes pates cuitent, egouttent les et deverses le contenant de ton BOULE. Dresses meticuleusement ton assiette (creuse) avec une grosse poignee de pate et repartis les morceaux de viandes. Par dessus, rapes du parmesan dessus et sers tes assiettes.</p>
             <p>Regales toi !</p>
           </article>
 
@@ -71,13 +71,15 @@
             </p>
             <p><strong>Valeur actuelle:</strong> {{a6.value}}</p>
             <p><strong>Valeur sauvegarde:</strong> {{a6.save}}</p>
+            <p>Les interactions sont geres par le JS ou l'HTML5. La visualisation de l'etat se fait via le border qui change de style. Je n'ai pas ajoute de directive pour le placeholder car je ne prone pas la compatibilite des anciens navigateurs (vous pouvez trouver <a href="https://gist.github.com/EpokK/5884029">cette directive</a> sur mon compte gist).</p>
+            <p>Je pense que ce genre de solution repond aux attentes des formulaires de plus en plus simple que l'on voit apparaitre avec le support de plusieurs terminaux, l'essort d'HTML5 et la multiplication de requetes AJAX. Au niveau backend, les choses se compliquent si vous n'utilisez pas un framework pure MVC. Pour simplifier la sauvegarde de votre formulaire a multi-champ, vous pouvez savegarder toutes les entrees contenu dedans au lieu de faire du cas par cas.</p>
           </article>
 
           <h2 ng-click="a5.show=!a5.show">Tarte aux mirabelles <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
           <article ng-show="a5.show==true">
             <img src="images/mirabelles.jpg" alt="Mirabelles" />
             <p>C'est la saison et donc il faut en profiter. Apres avoir taffer une bonne semaine il faut savoir se ressourcer. Quoi de mieux qu'une bonne tarte ? En plus une tarte aux mirabelles. La recette est simple mais comptes sur moi pour la rendre compliquee.</p>
-            <h4>Ingredients pour la patte</h4>
+            <h4>Ingredients pour la pate a tarte</h4>
             <ul>
               <li>250 g de farine</li>
               <li>125 g de sucre semoule</li>
@@ -86,15 +88,15 @@
               <li>1 zeste de citron</li>
               <li>1 pincee de sel</li>
             </ul>
-            <p>Dans un BOULE, délayez l'oeuf avec le sucre en poudre et une pincée de sel. Mettez la farine sur le plan de travail, faites un puits au centre, versez-y le contenu du bol et le zeste de citron. Versez le beurre mou. Malaxez le tout jusqu'à obtenir une pâte homogène. Etalez la au rouleau sur une feuille de papier cuisson. Ajoutez egalement une feuille de papier cuisson au dessus de la patte, pour garantir qu'elle ne brule pas. Faites cuire à four chaud 15 mn la patte dans le moule.</p>
-            <h4>Ingredients pour que ce soit meilleur qu'une simple patte</h4>
+            <p>Dans un BOULE, délayez l'oeuf avec le sucre en poudre et une pincée de sel. Mettez la farine sur le plan de travail, faites un puits au centre, versez-y le contenu du bol et le zeste de citron. Versez le beurre mou. Malaxez le tout jusqu'à obtenir une pâte homogène. Etalez la au rouleau sur une feuille de papier cuisson. Ajoutez egalement une feuille de papier cuisson au dessus de la pate, pour garantir qu'elle ne brule pas. Faites cuire à four chaud 15 mn la pate dans le moule.</p>
+            <h4>Ingredients pour que ce soit meilleur qu'une simple pate</h4>
             <ul>
               <li>2 cueilleres a soupe de farine</li>
               <li>150g de sucre</li>
               <li>2 oeufs</li>
               <li>4 grosses mirabelles que t'auras achete sur le marche de ton village et oai faut se bouger le cul le week end</li>
             </ul>
-            <p>Decouper de maniere reguliere vos mirabelles et les disposer sur la patte precuite de maniere esthetique. Dans un BOULE, melanger deux oeufs, 150g de sucre et deux cuillere a soupe de farine. Versez la preparation sur la futur tarte. Testez si le four est bien chaud en touchant l'interieur avec votre main. Enfournez et surveillez pendant 30min (ce qui equivaut a une partie de ladder SC2, 6 pool interdit).</p>
+            <p>Decouper de maniere reguliere vos mirabelles et les disposer sur la pate precuite de maniere esthetique. Dans un BOULE, melanger deux oeufs, 150g de sucre et deux cuillere a soupe de farine. Versez la preparation sur la futur tarte. Testez si le four est bien chaud en touchant l'interieur avec votre main. Enfournez et surveillez pendant 30min (ce qui equivaut a une partie de ladder SC2, 6 pool interdit).</p>
             <p>Regales toi !</p>
           </article>
 
@@ -204,7 +206,7 @@
           <ul>
             <li>Qui pense a facilite et vacation.</li>
             <li>Qui achete des surgeles et qui repete a longueur de journee "Je suis stresse, j'ai pas le temps".</li>
-            <li>Qui se laisse bercer par les medias et autres idiocies.</li>
+            <li>Qui se laisse bercer par les medias et autres idioties.</li>
             <li>Qui regarde son nombril et ne se remet jamais en question.</li>
           </ul>
           <p>Ce blog est fait pour toi !</p>
