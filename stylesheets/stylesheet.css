@@ -482,8 +482,9 @@ i {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
 
-.slide-enter,
-.slide-leave
+/* animate */
+.animate-enter,
+.animate-leave
 {
     -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
     -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
@@ -497,20 +498,21 @@ i {
     white-space:nowrap;
 }
 
-.slide-leave.slide-leave-active,
-.slide-enter {
+.animate-leave.animate-leave-active,
+.animate-enter {
     opacity: 0;
     width: 0px;
     height: 0px;
 }
 
-.slide-enter.slide-enter-active,
-.slide-leave {
+.animate-enter.animate-enter-active,
+.animate-leave {
     opacity: 1;
     width: 150px;
     height: 30px;
 }
 
+/* input google */
 .likeGoogle {
   width: 200px;
   height: 25px;
