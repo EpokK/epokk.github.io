@@ -20,6 +20,9 @@ myApp.controller("myCtrl", function($scope){
 	$scope.a7 = {
 		show: true
 	};
+	$scope.a8 = {
+		show: true
+	};
 });
 
 myApp.directive('ngBlur', function() {

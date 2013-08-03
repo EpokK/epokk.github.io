@@ -29,6 +29,24 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
+          <h2 ng-click="a8.show=!a8.show">Yeoman ! <i ng-class="{'icon-collapse-top': a8.show==false, 'icon-collapse': a8.show==true}"></i></h2>
+          <article ng-show="a8.show==true" ng-animate="'animate'">
+            <img src="images/yo.png" alt="Yeoman">
+            <p>A l'heure des applications single page, il est parfois fastidieu de commencer un projet front end vu le nombrede dependance que celui-ci demande: bootstrap, jQuery, AngularJS ... De plus chacun de ces elements evolue et il faut mettre a jour leur repo, verifier que ce soit toujours compatible en faisant des tests, revenir a la precedente car vous preferiez le bandeau rose flashy qui apparaissait quand vous posiez votre souris sur un element specifique. Tout plein de petit truc qui sont parfois bien difficile a gerer et a se souvenir.</p>
+            <p>Bien heureusement, une petite equipe de chez Google a cree Yeoman. Yeoman est un script permettant de generer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est a dire que vous pouvez creer un projet pour AngularJS, BackboneJS, EmberJS ...). <i>Bower</i> permet, quand a lui de gerer l'installation et la mise a jour de paquet (jQuery, Bootstrap). Enfin, <i>Grunt</i> permet de realiser divers tests sur votre projet jusqu'a sa compilation en production.</p>
+            <p>Voici quelque ligne de commande pour demarrer ton projet avec le generateur AngularJS:</p>
+<pre><code>
+  mkdir test1
+  cd test1
+  npm install -g yo // installation de yo, bower et grunt
+  npm install -g generator-angular // installation du generateur
+  yo angular // instance du projet
+  yo angular:route login // cree une route, un controlleur et la vue associee
+  grunt server // lancement de ton application
+</code></pre>
+            <p>Je te renvoie <a href="http://yeoman.io/">au site</a> pour la documentation et l'installation de Yeoman. Il te faudera un serveur <a href="http://nodejs.org">NodeJS</a> pour l'installer. Et <a href="https://github.com/yeoman/generator-angular">voici</a> le generateur AngularJS; bien <a href="http://yeoman.io/community-generators.html">d'autres</a> sont disponibles</p>
+          </article>
+
           <h2 ng-click="a7.show=!a7.show">Pates a la Carbonara <i ng-class="{'icon-collapse-top': a7.show==false, 'icon-collapse': a7.show==true}"></i></h2>
           <article ng-show="a7.show==true" ng-animate="'animate'">
             <img src="images/carbone.png" alt="Carbone">
