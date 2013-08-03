@@ -20,7 +20,7 @@ Il etait temps que je commence a ecrire un blog, sur mes passions, tout d'abord,
 J'accepte les critiques biensur, merci de rediger vos crachats en pull request. La correction de mes articles est egalement possible via ce meme principe.
 
 ### Merci a
- * Aude (@AudeMilliet) pour m'avoir fait decouvrir la cuisine et partager ces recettes
- * Mes parents pour m'avoir oriente vers l'informatique
+ * Aude (@AudeMilliet) pour m'avoir fait decouvrir la cuisine et partager (ou permis de voler) ses recettes
+ * Mes parents pour m'avoir oriente eloigne de l'informatique "Eteinds ta GameBoy !!!"
  * Julien (@netvision73) pour sa correction orthographique et ses idees qu'il aura copie ailleurs
  * Guillaume, mon ami d'enfance, qui corrige mes photes
