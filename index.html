@@ -32,53 +32,53 @@
           <h2 ng-click="a8.show=!a8.show">Yeoman ! <i ng-class="{'icon-collapse-top': a8.show==false, 'icon-collapse': a8.show==true}"></i></h2>
           <article ng-show="a8.show==true" ng-animate="'animate'">
             <img src="images/yo.png" alt="Yeoman">
-            <p>A l'heure des applications single page, il est parfois fastidieu de commencer un projet front end vu le nombrede dependance que celui-ci demande: bootstrap, jQuery, AngularJS ... De plus chacun de ces elements evolue et il faut mettre a jour leur repo, verifier que ce soit toujours compatible en faisant des tests, revenir a la precedente car vous preferiez le bandeau rose flashy qui apparaissait quand vous posiez votre souris sur un element specifique. Tout plein de petit truc qui sont parfois bien difficile a gerer et a se souvenir.</p>
-            <p>Bien heureusement, une petite equipe de chez Google a cree Yeoman. Yeoman est un script permettant de generer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est a dire que vous pouvez creer un projet pour AngularJS, BackboneJS, EmberJS, ...). <i>Bower</i> permet, quand a lui de gerer l'installation et la mise a jour de paquet (jQuery, Bootstrap, ...). Enfin, <i>Grunt</i> permet de realiser divers tests sur votre projet jusqu'a sa compilation en production.</p>
-            <p>Voici quelque ligne de commande pour demarrer ton projet avec le generateur AngularJS:</p>
+            <p>A l'heure des applications single page, il est parfois fastidieux de commencer un projet front end vu le nombre de d&eacute;pendances que celui-ci demande: Bootstrap, jQuery, AngularJS ... De plus chacun de ces &eacute;l&eacute;ments &eacute;volue et il faut mettre &agrave; jour leur repo, v&eacute;rifier que ce soit toujours compatible en faisant des tests, revenir &agrave; la pr&eacute;c&eacute;dente car vous pr&eacute;feriez le bandeau rose flashy qui apparaissait quand vous posiez votre souris sur un element sp&eacute;cifique. Tout plein de petits trucs qui sont parfois bien difficiles &agrave; g&eacute;rer et &agrave; se souvenir.</p>
+            <p>Bien heureusement, une petite &eacute;quipe de quelques gars bossant chez Google et d'autres ont cr&eacute;e Yeoman (dont un type qui mange des <a href='https://github.com/mklabs'>noix</a>). Yeoman est un script permettant de g&eacute;n&eacute;rer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est &agrave; dire que vous pouvez cr&eacute;er un projet pour AngularJS, BackboneJS, EmberJS, ...). <i>Bower</i> permet, quand &agrave; lui de gerer l'installation et la mise &agrave; jour de paquet (jQuery, Bootstrap, ...). Enfin, <i>Grunt</i> permet de r&eacute;aliser divers tests sur votre projet jusqu'&agrave; sa compilation en production.</p>
+            <p>Voici quelques lignes de commande pour d&eacute;marrer ton projet avec le g&eacute;n&eacute;rateur AngularJS :</p>
 <pre><code>
   mkdir test1
   cd test1
   npm install -g yo // installation de yo, bower et grunt
-  npm install -g generator-angular // installation du generateur
+  npm install -g generator-angular // installation du g&eacute;n&eacute;rateur
   yo angular // instance du projet
-  yo angular:route login // cree une route, un controlleur et la vue associee
+  yo angular:route login // cr&eacute;e une route, un controlleur et la vue associ&eacute;e
   grunt server // lancement de ton application
 </code></pre>
-            <p>Je te renvoie <a href="http://yeoman.io/">au site</a> pour la documentation et l'installation de Yeoman. Il te faudera un serveur <a href="http://nodejs.org">NodeJS</a> pour l'installer. Et <a href="https://github.com/yeoman/generator-angular">voici</a> le generateur AngularJS; bien <a href="http://yeoman.io/community-generators.html">d'autres</a> sont disponibles</p>
+            <p>Je te renvoie <a href="http://yeoman.io/">au site</a> pour la documentation et l'installation de Yeoman. Il te faudra un serveur <a href="http://nodejs.org">NodeJS</a> pour l'installer. Et <a href="https://github.com/yeoman/generator-angular">voici</a> le g&eacute;n&eacute;rateur AngularJS; bien <a href="http://yeoman.io/community-generators.html">d'autres</a> sont disponibles</p>
           </article>
 
-          <h2 ng-click="a7.show=!a7.show">Pates a la Carbonara <i ng-class="{'icon-collapse-top': a7.show==false, 'icon-collapse': a7.show==true}"></i></h2>
+          <h2 ng-click="a7.show=!a7.show">P&acirc;tes &agrave; la Carbonara <i ng-class="{'icon-collapse-top': a7.show==false, 'icon-collapse': a7.show==true}"></i></h2>
           <article ng-show="a7.show==true" ng-animate="'animate'">
             <img src="images/carbone.png" alt="Carbone">
-            <p>"Pff tu vas rien m'apprendre, je fais des pates carbo depuis que ma mere me laisse cuisiner". C'est ce que tu te dis, et tu as tors. Dans ton studio d'etudiant tu draguais deja avec ce plat, la miss n'osait pas te dire que c'etait ... degueux, trop gras, tu ajoutais de la creme fraiche, des lardons en plastiques et sortais des pates trop cuites. A la fin tu as eu a peine un beco et tu n'as pas compris ... Moi je vais te dire pourquoi, car t'etais un noob. Oui c'est vrai, mais maintenant tu veux reprendre les choses en main, re inviter cette nana et re tenter ta chance !</p>
-            <p>Avant toute chose il faut connaitre l'origine de cette recette pour mieux la comprendre, mieux la realiser. Cette recette est d'origine italienne. Les mama romaine cuisinaient ce plat aux mineurs pour qu'ils tiennent survivent a la durete de leur metier."Carbonara", "Carbo", "Carbone", pour la couleur noir que donnera le poivre sur ton plat et qui rappelera le charbon (carbone).</p>
+            <p>"Pff tu vas rien m'apprendre, je fais des p&acirc;tes carbo depuis que ma m&egrave;re me laisse cuisiner". C'est ce que tu te dis, et tu as tort. Dans ton studio d'&eacute;tudiant tu draguais d&eacute;ja avec ce plat, la miss n'osait pas te dire que c'etait ... d&eacute;gueux, trop gras, tu ajoutais de la cr&egrave;me fra&icirc;che, des lardons en plastique et sortais des p&acirc;tes trop cuites. &Agrave; la fin tu as eu a peine un b&eacute;co et tu n'as pas compris ... Moi je vais te dire pourquoi, car tu &eacute;tais un noob. Oui c'est vrai, mais maintenant tu veux reprendre les choses en main, r&eacute;-inviter cette demoiselle et re-tenter ta chance !</p>
+            <p>Avant toute chose il faut conna&icirc;tre l'origine de cette recette pour mieux la comprendre, mieux la r&eacute;aliser. Cette recette est d'origine italienne. Les mamas romaines cuisinaient ce plat aux mineurs pour qu'ils survivent a la durete de leur m&eacute;tier. "Carbonara", "Carbo", "Carbone", pour la couleur noir que donnera le poivre sur ton plat et qui rappelera le charbon (carbone).</p>
             <ul>
-              <li>1 oeuf par personne + 1 pour le plat (si vous etes deux ca fait donc trois oeufs)</li>
-              <li>de la joue de porc (pas des lardons, t'es plus un noob)</li>
+              <li>1 oeuf par personne + 1 pour le plat (si vous &ecirc;tes deux &ccedil;a fait donc trois oeufs)</li>
+              <li>de la joue de porc (pas des lardons, t'es plus un noob) ou du speck</li>
               <li>du poivre gris</li>
               <li>du gros sel</li>
-              <li>200gr de spaghetti par personne de marque italienne de preference</li>
+              <li>200gr de spaghetti par personne de marque italienne de pr&eacute;ference</li>
               <li>1 gros morceau de parmigiano</li>
             </ul>
-            <p>Dans une gros recipiant, faire bouillir de l'eau. Lorsque celle-ci boue, lance une grosse poignee de sel dedans et une dans ton dos (ca porte chance et ca fait chier ta meuf qui te bouche levier / la douche avec ses cheveux). Place delicatement tes spaghetti dans l'eau et laisse les cuir 1 min de moins que ce qui est indique sur ton paquet.</p>
-            <p>Pendant ce temps, lance Super Meat Boy, non surtout pas. Coupe en grossier morceaux la joue de porc que tu auras achete chez ton boucher; oai prends le temps d'aller chez lui, ces tarifs sont generalement competitif a ceux de carrefour / leclerc / casino et a force d'y aller il t'offrira de la bidoche ! De plus ca te fait connaitre / travailler ton quartier et ca fait bien chier les vieux de voir des jeunes prendre soin d'eux. Fais revenir la joue de porc dans une poele en veillant a ce qu'elle ne brule pas.</p>
-            <p>Dans un BOULE melange vigoureusement (la branlette ca sert) les jaunes d'oeufs avec trois pincees de poivres. Il faut que ta composition mousse. Rajoute deux cueilleres a soupe du bouillon venant de l'eau de tes pates pour rendre le plat moins sec.</p>
-            <p>Une fois tes pates cuitent, egouttent les et deverses le contenant de ton BOULE. Dresses meticuleusement ton assiette (creuse) avec une grosse poignee de pate et repartis les morceaux de viandes. Par dessus, rapes du parmesan et sers tes assiettes.</p>
-            <p>Regales toi !</p>
+            <p>Dans une gros r&eacute;cipient, faire bouillir de l'eau. Lorsque celle-ci boue, lance une grosse poign&eacute;e de sel dedans et une dans ton dos (&ccedil;a porte chance et &ccedil;a fait chier ta meuf qui te bouche l'&eacute;vier / la douche avec ses cheveux). Place d&eacute;licatement tes spaghetti dans l'eau et laisse les cuir 1 min de moins que ce qui est indiqu&eacute; sur ton paquet.</p>
+            <p>Pendant ce temps, lance Super Meat Boy, non surtout pas. Coupe en grossier morceaux la joue de porc que tu auras achet&eacute; chez ton boucher; oai prends le temps d'aller chez lui, ses tarifs sont g&eacute;n&eacute;ralement comp&eacute;titif &agrave; ceux de Carrefour / Leclerc / Casino et &agrave; force d'y aller il t'offrira de la bidoche ! De plus &ccedil;a te fait conna&icirc;tre / travailler ton quartier et &ccedil;a fait bien chier les vieux de voir des jeunes prendre soin d'eux. Fais revenir la joue de porc dans une poele en veillant &agrave; ce qu'elle ne br&ucirc;le pas.</p>
+            <p>Dans un BOULE m&eacute;lange vigoureusement (la branlette &ccedil;a sert) les jaunes d'oeufs avec trois pinc&eacute;es de poivres. Il faut que ta composition mousse. Rajoute deux cuillers &agrave; soupe du bouillon venant de l'eau de tes p&acirc;tes pour rendre le plat moins sec.</p>
+            <p>Une fois tes p&acirc;tes cuites, &eacute;goutte-les et d&eacute;verse le contenu de ton BOULE. Dresses m&eacute;ticuleusement ton assiette (creuse) avec une grosse poign&eacute;e de p&acirc;te et r&eacute;partis les morceaux de viande. Par dessus, r&acirc;pes du parmesan et sers tes assiettes.</p>
+            <p>R&eacute;gales toi !</p>
           </article>
 
           <h2 ng-click="a6.show=!a6.show">Input like Gmail contact <i ng-class="{'icon-collapse-top': a6.show==false, 'icon-collapse': a6.show==true}"></i></h2>
           <article ng-show="a6.show==true" ng-animate="'slide'">
             <img src="images/likeGmail.png" alt="Like Gmail">
-            <p>Je travaille actuellement sur la realisation d'une fiche de contact. Je dois la mettre au gout du jour. Comme nous avons dernierement choisi d'utiliser AngularJS, j'ai donc la joie de pouvoir l'utiliser. Etant tres attentif a ce que propose Google en front-end, je me suis attele a realise les memes interactions que leur fiche de contact au niveau des champs d'entree.</p>
-            <p>C'est a dire:</p>
+            <p>Je travaille actuellement sur la r&eacute;alisation d'une fiche de contact. Je dois la mettre au go&ucirc;t du jour. Comme nous avons derni&egrave;rement choisi d'utiliser AngularJS, j'ai donc la joie de pouvoir l'utiliser. &Eacute;tant tr&egrave;s attentif &agrave; ce que propose Google en front-end, je me suis attel&eacute; &agrave; r&eacute;aliser les m&ecirc;mes interactions que leur fiche de contact au niveau des champs d'entr&eacute;e.</p>
+            <p>C'est &agrave; dire:</p>
             <ul>
-              <li>Un affichage de la valeur du champ par defaut</li>
+              <li>Un affichage de la valeur du champ par d&eacute;faut</li>
               <li>Un placeholder si la valeur du champ est vide</li>
-              <li>Montrer l'edition au survol du champ</li>
-              <li>Au focus sur le champ, afficher l'edition</li>
+              <li>Montrer l'&eacute;dition au survol du champ</li>
+              <li>Au focus sur le champ, afficher l'&eacute;dition</li>
               <li>Au blur sur le champ, sauvegarder sa valeur (AJAX)</li>
-              <li>Un ENTER dans le champ, sauvegarde egalement la valeur</li>
+              <li>Un ENTER dans le champ, sauvegarde &eacute;galement la valeur</li>
               <li>Un tab donne le focus vers le champ suivant</li>
             </ul>
             <p>Et voici ma solution:</p>
@@ -88,34 +88,34 @@
               </form>
             </p>
             <p><strong>Valeur actuelle:</strong> {{a6.value}}</p>
-            <p><strong>Valeur sauvegarde:</strong> {{a6.save}}</p>
-            <p>Les interactions sont geres par le JS ou l'HTML5. La visualisation de l'etat se fait via le border qui change de style. Je n'ai pas ajoute de directive pour le placeholder car je ne prone pas la compatibilite des anciens navigateurs (vous pouvez trouver <a href="https://gist.github.com/EpokK/5884029">cette directive</a> sur mon compte gist).</p>
-            <p>Je pense que ce genre de solution repond aux attentes des formulaires de plus en plus simple que l'on voit apparaitre avec le support de plusieurs terminaux, l'essort d'HTML5 et la multiplication de requetes AJAX. Au niveau backend, les choses se compliquent si vous n'utilisez pas un framework pure MVC. Pour simplifier la sauvegarde de votre formulaire a multi-champ, vous pouvez savegarder toutes les entrees contenu dedans au lieu de faire du cas par cas.</p>
+            <p><strong>Valeur sauvegard&eacute;e:</strong> {{a6.save}}</p>
+            <p>Les interactions sont g&eacute;r&eacute;es par le JS ou l'HTML5. La visualisation de l'&eacute;tat se fait via le border qui change de style. Je n'ai pas ajout&eacute; de directive pour le placeholder car je ne pr&ocirc;ne pas la compatibilit&eacute; des anciens navigateurs (vous pouvez trouver <a href="https://gist.github.com/EpokK/5884029">cette directive</a> sur mon compte Gist).</p>
+            <p>Je pense que ce genre de solution r&eacute;pond aux attentes des formulaires de plus en plus simples que l'on voit appara&icirc;tre avec le support de plusieurs terminaux, l'essort d'HTML5 et la multiplication de requ&ecirc;tes AJAX. Au niveau backend, les choses se compliquent si vous n'utilisez pas un framework pur MVC. Pour simplifier la sauvegarde de votre formulaire &agrave; multi-champ, vous pouvez savegarder toutes les entr&eacute;es contenues dedans au lieu de faire du cas par cas.</p>
           </article>
 
           <h2 ng-click="a5.show=!a5.show">Tarte aux mirabelles <i ng-class="{'icon-collapse-top': a5.show==false, 'icon-collapse': a5.show==true}"></i></h2>
           <article ng-show="a5.show==true">
             <img src="images/mirabelles.jpg" alt="Mirabelles" />
-            <p>C'est la saison et donc il faut en profiter. Apres avoir taffer une bonne semaine il faut savoir se ressourcer. Quoi de mieux qu'une bonne tarte ? En plus une tarte aux mirabelles. La recette est simple mais comptes sur moi pour la rendre compliquee.</p>
-            <h4>Ingredients pour la pate a tarte</h4>
+            <p>C'est la saison et donc il faut en profiter. Apres avoir taf&eacute; une bonne semaine il faut savoir se ressourcer. Quoi de mieux qu'une bonne tarte ? En plus une tarte aux mirabelles. La recette est simple mais comptes sur moi pour la rendre compliqu&eacute;e.</p>
+            <h4>Ingr&eacute;dients pour la p&acirc;te &agrave; tarte</h4>
             <ul>
               <li>250 g de farine</li>
               <li>125 g de sucre semoule</li>
               <li>1 oeuf</li>
               <li>100g de beurre</li>
               <li>1 zeste de citron</li>
-              <li>1 pincee de sel</li>
+              <li>1 pinc&eacute;e de sel</li>
             </ul>
-            <p>Dans un BOULE, délayez l'oeuf avec le sucre en poudre et une pincée de sel. Mettez la farine sur le plan de travail, faites un puits au centre, versez-y le contenu du bol et le zeste de citron. Versez le beurre mou. Malaxez le tout jusqu'à obtenir une pâte homogène. Etalez la au rouleau sur une feuille de papier cuisson. Ajoutez egalement une feuille de papier cuisson au dessus de la pate, pour garantir qu'elle ne brule pas. Faites cuire à four chaud 15 mn la pate dans le moule.</p>
-            <h4>Ingredients pour que ce soit meilleur qu'une simple pate</h4>
+            <p>Dans un BOULE, d&eacute;layez l'oeuf avec le sucre en poudre et une pincée de sel. Mettez la farine sur le plan de travail, faites un puits au centre, versez-y le contenu du bol et le zeste de citron. Versez le beurre mou. Malaxez le tout jusqu'&agrave; obtenir une p&acirc;te homog&egrave;ne. &Eacute;talez-l&agrave; au rouleau sur une feuille de papier cuisson. Ajoutez &eacute;galement une feuille de papier cuisson au dessus de la p&acirc;te, pour garantir qu'elle ne br&ucirc;le pas. Faites cuire &agrave; four chaud 15 mn la p&acirc;te dans le BOULE.</p>
+            <h4>Ingr&eacute;dients pour que ce soit meilleur qu'une simple p&acirc;te</h4>
             <ul>
-              <li>2 cueilleres a soupe de farine</li>
+              <li>2 cuillers &agrave; soupe de farine</li>
               <li>150g de sucre</li>
               <li>2 oeufs</li>
-              <li>4 grosses mirabelles que t'auras achete sur le marche de ton village et oai faut se bouger le cul le week end</li>
+              <li>4 grosses mirabelles que t'auras achet&eacute; sur le marche de ton village et oai faut se bouger le boule le week end</li>
             </ul>
-            <p>Decouper de maniere reguliere vos mirabelles et les disposer sur la pate precuite de maniere esthetique. Dans un BOULE, melanger deux oeufs, 150g de sucre et deux cuillere a soupe de farine. Versez la preparation sur la futur tarte. Testez si le four est bien chaud en touchant l'interieur avec votre main. Enfournez et surveillez pendant 30min (ce qui equivaut a une partie de ladder SC2, 6 pool interdit).</p>
-            <p>Regales toi !</p>
+            <p>D&eacute;couper de maniere r&eacute;guli&egrave;re vos mirabelles et les disposer sur la pate pr&eacute;cuite de maniere esth&eacute;tique. Dans un BOULE, m&eacute;langer deux oeufs, 150g de sucre et deux cuillers &agrave; soupe de farine. Versez la pr&eacute;paration sur la futur tarte. Testez si le four est bien chaud en touchant l'int&eacute;rieur avec votre main. Enfournez et surveillez pendant 30min (ce qui &eacute;quivaut &agrave; une partie de ladder SC2, 6 pool interdit).</p>
+            <p>R&eacute;gales toi !</p>
           </article>
 
           <h2 ng-click="a4.show=!a4.show">Ractive.js : Alternative &agrave; AngularJS <i ng-class="{'icon-collapse-top': a4.show==false, 'icon-collapse': a4.show==true}"></i></h2>
@@ -220,15 +220,15 @@
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
           <p>Front End Developer @infomaniak - Fan de #HTML5, #CSS3, @AngularJS, @BackboneJS, #ResponsiveDesign, @yeoman et autres technos bien cools. "Hardcore devlopper / cooker", constamment en recherche de connaissances sur le d&eacute;veloppement web et d&eacute;couvertes culinaires. J'aime ce qui est ordonn&eacute; et bien fait / pens&eacute;, j'appr&eacute;cie egalement les choses limites / restrictives car je consid&egrave;re que les meilleurs projets sont souvent les plus simples.</p>
           <p><strong>Pour qui et pourquoi ce blog ?</strong></p>
-          <p>Si tu en as marre de cette societe de mou du genoux,</p>
+          <p>Si tu en as marre de cette soci&eacute;t&eacute; de mou du genou,</p>
           <ul>
-            <li>Qui pense a facilite et vacation.</li>
-            <li>Qui achete des surgeles et qui repete a longueur de journee "Je suis stresse, j'ai pas le temps".</li>
-            <li>Qui se laisse bercer par les medias et autres idioties.</li>
+            <li>Qui pense &agrave; facilit&eacute; et vacation.</li>
+            <li>Qui ach&egrave;te des surgel&eacute;s et qui r&eacute;p&egrave;te &agrave; longueur de journ&eacute;e "Je suis stress&eacute;, j'ai pas le temps".</li>
+            <li>Qui se laisse bercer par les m&eacute;dias et autres idioties.</li>
             <li>Qui regarde son nombril et ne se remet jamais en question.</li>
           </ul>
           <p>Ce blog est fait pour toi !</p>
-          <p>J'ecris ce blog pour partager mes decouvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve interessant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles (sauf ceux rajout&eacute;s par <a href="http://www.twitter.com/netvision73">@netvision73</a>). Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui m&ecirc;me, en faisant des <i>pull request</i>. Il est m&ecirc;me possible de corriger mes fautes d'orthographe si tu commences &agrave; avoir les yeux <span style="color: red;">rouges</span>.</p>
+          <p>J'&eacute;cris ce blog pour partager mes d&eacute;couvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve int&eacute;ressant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles (sauf ceux rajout&eacute;s par <a href="http://www.twitter.com/netvision73">@netvision73</a>). Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui m&ecirc;me, en faisant des <i>pull request</i>. Il est m&ecirc;me possible de corriger mes fautes d'orthographe si tu commences &agrave; avoir les yeux <span style="color: red;">rouges</span>.</p>
         </aside>
       </div>
     </div>
