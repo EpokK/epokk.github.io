@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css" />
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
@@ -167,7 +168,7 @@
             <p>Petit d&eacute;ja tu aimais l'informatique (dans une cave), tu jouais aux jeux videos avec tes potes et tu essayais de comprendre quelques lignes de codes. Maintenant tu les comprends ces lignes, tu as grandis dans cet univers. C'est bien. Tu as debut&eacute; en &eacute;ditant tes premiers fichiers avec vim, gedit ou encore notepad. Puis sont apparus des IDE avanc&eacute;s tel que : Eclispe, Netbeans ou encore Aptana. Tu y a go&ucirc;t&eacute;, mais au fur et &agrave; mesure de son utilisation, tu sentais que quelque chose t'&eacute;chappais. Tu te sentais frustr&eacute;, faible pour avoir suivi les conseils d'un coll&egrave;gue binoclar aux cheveux longs. Ce c&ocirc;t&eacute; simple et limite que possedaient tes premiers editeurs. Tu as peut-&ecirc;tre bascul&eacute; sur Notepad++, par la suite, le trouvant &agrave; ton go&ucirc;t ou m&ecirc;me, tu as compris que le d&eacute;veloppement n'&eacute;tais pas fait pour toi et vends des calle&ccedil;ons / strings de couleur sur les march&eacute;s. Mais tout &ccedil;a c'est fini !</p>
             <img width="100%" src="images/sublime.png" alt="Sublime Text">
             <p>Si tu ne le sais pas encore, nous sommes en 2013 et un &eacute;diteur de d&eacute;veloppement est sorti, il se nomme Sublime Text. Il a connu un engo&ucirc;ement aupres des d&eacute;veloppeurs avec la version 2. Cet &eacute;diteur de texte est cod&eacute; en C++ / Python par Jon Skinner et il est disponible sous toutes les plateformes (Mac, Linux et Windows). Pour tout ce qui est de l'installation (Package Control et autres plugins kikoolol) je te laisse trouver cel&agrave; sur les Internetz. Ce que je veux te pr&eacute;senter ici dans cet article, c'est ma configuration. Tu peux la copier dans ton fichier de configuration () et te la peter. Je te laisse le choix &eacute;galement du color_scheme m&ecirc;me si j'appr&eacute;cie actuellement l'excellent "Tomorrow".</p>
-            <pre><code>
+            <pre><code class="json">
 {
   "caret_style": "phase",
   "detect_slow_plugins": false,
@@ -238,6 +239,7 @@
     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/angular.min.js"></script>
     <script type="text/javascript" src="javascripts/main.js"></script>
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -246,6 +248,8 @@
 
       ga('create', 'UA-42577530-1', 'epokk.github.io');
       ga('send', 'pageview');
+
+      hljs.initHighlightingOnLoad();
     </script>
   </body>
 </html>
