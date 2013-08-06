@@ -33,11 +33,21 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
+          <div ng-repeat="article in articles">
+            <div ng-include="" src="article.url"></div>
+          </div>
+
+          <h2 ng-click="a9.show=!a9.show">Quiche a la ratatouille <i ng-class="{'icon-collapse-top': a9.show==false, 'icon-collapse': a9.show==true}"></i></h2>
+          <article ng-show="a9.show==true" ng-animate="'animate'">
+            <p>T'as du BOULE, je te donne une recette de saison, ca c'est la classe. Tu peux te la peter, mets toi a l'aise, il fait chaud, rien de mieux que de preparer un plat a calbute.</p>
+            <p>Le week end dernier, tu as fais plaisir a tes parents, tu es aller manger chez eux. En partant ta mere t'a file un bocal de ratatouille et tu ne sais qu'en faire. TKT je suis la. (Dans le cas ou tu as pas de ratatouille, c'est tres facile a faire, je te renvois donc <a href="">ici</a>).</p>
+          </article>
+
           <h2 ng-click="a8.show=!a8.show">Yeoman ! <i ng-class="{'icon-collapse-top': a8.show==false, 'icon-collapse': a8.show==true}"></i></h2>
           <article ng-show="a8.show==true" ng-animate="'animate'">
             <img src="images/yo.png" alt="Yeoman">
             <p>A l'heure des applications single page, il est parfois fastidieux de commencer un projet front end vu le nombre de d&eacute;pendances que celui-ci demande: Bootstrap, jQuery, AngularJS ... De plus chacun de ces &eacute;l&eacute;ments &eacute;volue et il faut mettre &agrave; jour leur repo, v&eacute;rifier que ce soit toujours compatible en faisant des tests, revenir &agrave; la pr&eacute;c&eacute;dente car vous pr&eacute;feriez le bandeau rose flashy qui apparaissait quand vous posiez votre souris sur un element sp&eacute;cifique. Tout plein de petits trucs qui sont parfois bien difficiles &agrave; g&eacute;rer et &agrave; se souvenir.</p>
-            <p>Bien heureusement, une petite &eacute;quipe de quelques gars bossant chez Google et d'autres ont cr&eacute;e Yeoman (dont un type qui mange des <a href='https://github.com/mklabs'>noix</a>). Yeoman est un script permettant de g&eacute;n&eacute;rer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est &agrave; dire que vous pouvez cr&eacute;er un projet pour AngularJS, BackboneJS, EmberJS, ...). <i>Bower</i> permet, quand &agrave; lui de gerer l'installation et la mise &agrave; jour de paquet (jQuery, Bootstrap, ...). Enfin, <i>Grunt</i> permet de r&eacute;aliser divers tests sur votre projet jusqu'&agrave; sa compilation en production.</p>
+            <p>Bien heureusement, une petite &eacute;quipe de quelques gars bossant chez Google et d'autres ont cr&eacute;e Yeoman (dont <a href='https://github.com/mklabs'>un type</a> qui mange des noix de Grenoble). Yeoman est un script permettant de g&eacute;n&eacute;rer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est &agrave; dire que vous pouvez cr&eacute;er un projet pour AngularJS, BackboneJS, EmberJS, ...). <i>Bower</i> permet, quand &agrave; lui de gerer l'installation et la mise &agrave; jour de paquet (jQuery, Bootstrap, ...). Enfin, <i>Grunt</i> permet de r&eacute;aliser divers tests sur votre projet jusqu'&agrave; sa compilation en production.</p>
             <p>Voici quelques lignes de commande pour d&eacute;marrer ton projet avec le g&eacute;n&eacute;rateur AngularJS :</p>
 <pre><code class="bash">
   ###### on cree le dossier et on se deplace dedans

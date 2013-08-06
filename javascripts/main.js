@@ -23,6 +23,11 @@ myApp.controller("myCtrl", function($scope){
 	$scope.a8 = {
 		show: true
 	};
+	$scope.a9 = {
+		show: true
+	};
+	$scope.articles = [];
+	$scope.articles.push({url: 'articles/1.html'});
 });
 
 myApp.directive('ngBlur', function() {
