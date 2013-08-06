@@ -34,7 +34,7 @@
       <div class="inner clearfix">
         <section id="main-content">
           <div ng-repeat="article in articles" ng-init="article.show=false">
-            <h2 ng-click="article.show=!article.show"><span ng-bind="article.title"></span> <i ng-class="{'icon-collapse-top': article.show==false, 'icon-collapse': article.show==true}"></i></h2>
+            <h2><span ng-bind="article.title"></span> <a href="#" ng-click="article.show=!article.show"><i ng-class="{'icon-collapse-top': article.show==false, 'icon-collapse': article.show==true}"></i></a></h2>
             <article ng-show="article.show==true">
               <div ng-include="" src="article.url"></div>
             </article>
