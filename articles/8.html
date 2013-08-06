@@ -1,0 +1,20 @@
+<img src="images/yo.png" alt="Yeoman">
+<p>A l'heure des applications single page, il est parfois fastidieux de commencer un projet front end vu le nombre de d&eacute;pendances que celui-ci demande: Bootstrap, jQuery, AngularJS ... De plus chacun de ces &eacute;l&eacute;ments &eacute;volue et il faut mettre &agrave; jour leur repo, v&eacute;rifier que ce soit toujours compatible en faisant des tests, revenir &agrave; la pr&eacute;c&eacute;dente car vous pr&eacute;feriez le bandeau rose flashy qui apparaissait quand vous posiez votre souris sur un element sp&eacute;cifique. Tout plein de petits trucs qui sont parfois bien difficiles &agrave; g&eacute;rer et &agrave; se souvenir.</p>
+<p>Bien heureusement, une petite &eacute;quipe de quelques gars bossant chez Google et d'autres ont cr&eacute;e Yeoman (dont <a href='https://github.com/mklabs'>un type</a> qui mange des noix de Grenoble). Yeoman est un script permettant de g&eacute;n&eacute;rer un projet front-end rapidement et de le maintenir. Il s'appuit sur trois outils. <i>Yo</i> pour la gestion du generateur de projet (c'est &agrave; dire que vous pouvez cr&eacute;er un projet pour AngularJS, BackboneJS, EmberJS, ...). <i>Bower</i> permet, quand &agrave; lui de gerer l'installation et la mise &agrave; jour de paquet (jQuery, Bootstrap, ...). Enfin, <i>Grunt</i> permet de r&eacute;aliser divers tests sur votre projet jusqu'&agrave; sa compilation en production.</p>
+<p>Voici quelques lignes de commande pour d&eacute;marrer ton projet avec le g&eacute;n&eacute;rateur AngularJS :</p>
+<pre><code class="bash">
+  ###### on cree le dossier et on se deplace dedans
+  mkdir test1
+  cd test1
+  ###### installation de yo, bower et grunt
+  npm install -g yo
+  ###### installation du g&eacute;n&eacute;rateur
+  npm install -g generator-angular
+  ###### instance du projet
+  yo angular
+  ###### cr&eacute;e une route, un controlleur et la vue associ&eacute;e
+  yo angular:route login
+  ###### lancement de ton application
+  grunt server
+</code></pre>
+<p>Je te renvoie <a href="http://yeoman.io/">au site</a> pour la documentation et l'installation de Yeoman. Il te faudra un serveur <a href="http://nodejs.org">NodeJS</a> pour l'installer. Et <a href="https://github.com/yeoman/generator-angular">voici</a> le g&eacute;n&eacute;rateur AngularJS; bien <a href="http://yeoman.io/community-generators.html">d'autres</a> sont disponibles</p>

@@ -1,0 +1,22 @@
+<img src="images/likeGmail.png" alt="Like Gmail">
+<p>Je travaille actuellement sur la r&eacute;alisation d'une fiche de contact. Je dois la mettre au go&ucirc;t du jour. Comme nous avons derni&egrave;rement choisi d'utiliser AngularJS, j'ai donc la joie de pouvoir l'utiliser. &Eacute;tant tr&egrave;s attentif &agrave; ce que propose Google en front-end, je me suis attel&eacute; &agrave; r&eacute;aliser les m&ecirc;mes interactions que leur fiche de contact au niveau des champs d'entr&eacute;e.</p>
+<p>C'est &agrave; dire:</p>
+<ul>
+  <li>Un affichage de la valeur du champ par d&eacute;faut</li>
+  <li>Un placeholder si la valeur du champ est vide</li>
+  <li>Montrer l'&eacute;dition au survol du champ</li>
+  <li>Au focus sur le champ, afficher l'&eacute;dition</li>
+  <li>Au blur sur le champ, sauvegarder sa valeur (AJAX)</li>
+  <li>Un ENTER dans le champ, sauvegarde &eacute;galement la valeur</li>
+  <li>Un tab donne le focus vers le champ suivant</li>
+</ul>
+<p>Et voici ma solution:</p>
+<p>
+  <form ng-submit="a6.save=a6.value">
+    <input class="likeGoogle" placeholder="Rentrer une valeur ici" type="text" ng-model="a6.value" ng-blur="a6.save=a6.value" />
+  </form>
+</p>
+<p><strong>Valeur actuelle:</strong> {{a6.value}}</p>
+<p><strong>Valeur sauvegard&eacute;e:</strong> {{a6.save}}</p>
+<p>Les interactions sont g&eacute;r&eacute;es par le JS ou l'HTML5. La visualisation de l'&eacute;tat se fait via le border qui change de style. Je n'ai pas ajout&eacute; de directive pour le placeholder car je ne pr&ocirc;ne pas la compatibilit&eacute; des anciens navigateurs (vous pouvez trouver <a href="https://gist.github.com/EpokK/5884029">cette directive</a> sur mon compte Gist).</p>
+<p>Je pense que ce genre de solution r&eacute;pond aux attentes des formulaires de plus en plus simples que l'on voit appara&icirc;tre avec le support de plusieurs terminaux, l'essort d'HTML5 et la multiplication de requ&ecirc;tes AJAX. Au niveau backend, les choses se compliquent si vous n'utilisez pas un framework pur MVC. Pour simplifier la sauvegarde de votre formulaire &agrave; multi-champ, vous pouvez savegarder toutes les entr&eacute;es contenues dedans au lieu de faire du cas par cas.</p>

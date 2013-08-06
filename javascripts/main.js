@@ -27,7 +27,15 @@ myApp.controller("myCtrl", function($scope){
 		show: true
 	};
 	$scope.articles = [];
-	$scope.articles.push({url: 'articles/1.html'});
+	$scope.articles.push({url: 'articles/1.html', title: "Le BOLD c'est la vie"});
+	$scope.articles.push({url: 'articles/2.html', title: "Ma configuration pour Sublime Text"});
+	$scope.articles.push({url: 'articles/3.html', title: "Quelques directives Angular"});
+	$scope.articles.push({url: 'articles/4.html', title: "Ractive.js : Alternative &agrave; AngularJS"});
+	$scope.articles.push({url: 'articles/5.html', title: "Tarte aux mirabelles"});
+	$scope.articles.push({url: 'articles/6.html', title: "Input like Gmail contact"});
+	$scope.articles.push({url: 'articles/7.html', title: "P&acirc;tes &agrave; la Carbonara"});
+	$scope.articles.push({url: 'articles/8.html', title: "Yoh man !"});
+	$scope.articles.push({url: 'articles/9.html', title: "Quiche a la ratatouille"});
 });
 
 myApp.directive('ngBlur', function() {
