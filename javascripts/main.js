@@ -13,9 +13,10 @@ myApp.controller("myCtrl", function($scope){
 	$scope.articles.push({url: 'articles/1.html', title: "Le BOLD c'est la vie"});
 
 	$scope.$on('$includeContentLoaded', function(event) {
-	  if(countNgIncludLoaded == $scope.articles.length) {
-	  	$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
-	  }
+		countNgIncludLoaded++;
+		if(countNgIncludLoaded == $scope.articles.length) {
+			$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
+		}
 	});
 });
 
