@@ -157,7 +157,7 @@ aside a.button {
   font-size: 21px;
 }
 
-code, pre {
+/*code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
   margin-bottom: 30px;
@@ -182,7 +182,7 @@ pre code {
   background-color: #1d1f21;
   border: none;
   padding: 0;
-}
+}*/
 
 ul, ol, dl {
   margin-bottom: 20px;
