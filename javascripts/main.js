@@ -1,5 +1,6 @@
 myApp = angular.module("myApp", []);
 myApp.controller("myCtrl", function($scope){
+	var countNgIncludLoaded = 0;
 	$scope.articles = [];
 	$scope.articles.push({url: 'articles/9.html', title: "Quiche a la ratatouille"});
 	$scope.articles.push({url: 'articles/8.html', title: "Yoh man !"});
@@ -12,8 +13,9 @@ myApp.controller("myCtrl", function($scope){
 	$scope.articles.push({url: 'articles/1.html', title: "Le BOLD c'est la vie"});
 
 	$scope.$on('$includeContentLoaded', function(event) {
-	  console.log('another include was loaded', event.targetScope);
-	  $('pre code').each(function(i, e) { hljs.highlightBlock(e); });
+	  if(countNgIncludLoaded == $scope.articles.length) {
+	  	$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
+	  }
 	});
 });
 
