@@ -2,6 +2,7 @@ myApp = angular.module("myApp", []);
 myApp.controller("myCtrl", function($scope){
 	var countNgIncludLoaded = 0;
 	$scope.articles = [];
+	$scope.articles.push({url: 'articles/10.md', title: "Transclude tu connais ?"});
 	$scope.articles.push({url: 'articles/9.html', title: "Quiche a la ratatouille"});
 	$scope.articles.push({url: 'articles/8.html', title: "Yoh man !"});
 	$scope.articles.push({url: 'articles/7.html', title: "Pates a la Carbonara"});
