@@ -20,6 +20,6 @@ J'accepte les critiques biensur, merci de rediger vos crachats en pull request. 
 
 ### Merci a
  * Aude (@AudeMilliet) pour m'avoir fait decouvrir la cuisine et partager (ou permis de voler) ses recettes
- * Mes parents pour m'avoir oriente eloigne de l'informatique "Eteinds ta GameBoy !!!"
+ * Mes parents pour m'avoir oriente eloigne de l'informatique "Eteinds ta GameBoy, on mange !"
  * Julien (@netvision73) pour sa correction orthographique et ses idees qu'il aura copie ailleurs
  * Guillaume, mon ami d'enfance, qui corrige mes photes
