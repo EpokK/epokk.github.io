@@ -21,6 +21,11 @@ myApp.controller("myCtrl", function($scope){
 			$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
 		}
 	});
+
+	$scope.showArticle = function(article) {
+		article.show =! article.show;
+		article.url2 = article.url;
+	};
 });
 
 myApp.directive('ngBlur', function() {
