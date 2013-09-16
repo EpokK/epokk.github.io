@@ -32,7 +32,7 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <div ng-repeat="article in articles" ng-init="article.show=false">
+          <div ng-repeat="article in articles">
             <h2><span ng-bind="article.title"></span> <a href="#" ng-click="showArticle()"><i ng-class="{'icon-collapse-top': article.show==false, 'icon-collapse': article.show==true}"></i></a></h2>
             <article ng-show="article.show==true">
               <div ng-include="" src="article.url2"></div>
