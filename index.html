@@ -12,13 +12,13 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
   <link rel="me" href="https://plus.google.com/102619660127444923947" />
   <link rel="publisher" href="https://plus.google.com/102619660127444923947" />
-  <meta content="Blog sur le front-end developpement et la cuisine" name="description" />
+  <meta content="Blog sur le front-end developpement et la cuisine par Richard Tetaz" name="description" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Code &amp; Cuisine by EpokK</title>
+    <title>Code &amp; Cuisine par Richard Tetaz</title>
   </head>
 
   <body ng-app="myApp">
@@ -32,11 +32,19 @@
     <div id="content-wrapper" ng-controller="myCtrl">
       <div class="inner clearfix">
         <section id="main-content">
-          <div ng-repeat="article in articles" ng-init="article.show=false">
+          <div ng-repeat="article in articles" ng-init="article.show=false" ng-hide="cv.show">
             <h2><span ng-click="showArticle(article)" style="cursor: pointer;" ng-bind="article.title"></span> <a href="#" ng-click="showArticle(article)"><i ng-class="{'icon-collapse-top': article.show==false, 'icon-collapse': article.show==true}"></i></a></h2>
             <article ng-show="article.show==true">
               <div ng-include="" src="article.url2"></div>
             </article>
+          </div>
+
+          <div ng-show="cv.show" class="CV">
+            <h2>Formation</h2>
+            <h2>Experiences professionelles</h2>
+            <h2>Projets personnelles</h2>
+            <h2>Competences</h2>
+            <h2>Centres d'interet</h2>
           </div>
 
           <div id="disqus_thread"></div>
@@ -47,7 +55,7 @@
               /* * * DON'T EDIT BELOW THIS LINE * * */
               (function() {
                   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
               })();
           </script>
@@ -61,19 +69,19 @@
           <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github-sign"></i> Fork me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="https://gist.github.com/EpokK"><i class="icon-github"></i> Gist me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
+         <!--  <div><a ng-click="cv.show==true" href="#" style="font-size: 24px;"><i class="icon-file"></i> CV</a></div> -->
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
-          <p>Front End Developer @infomaniak - Fan de #HTML5, #CSS3, @AngularJS, @BackboneJS, #ResponsiveDesign, @yeoman et autres technos bien cools. "Hardcore devlopper / cooker", constamment en recherche de connaissances sur le d&eacute;veloppement web et d&eacute;couvertes culinaires. J'aime ce qui est ordonn&eacute; et bien fait / pens&eacute;, j'appr&eacute;cie egalement les choses limites / restrictives car je consid&egrave;re que les meilleurs projets sont souvent les plus simples.</p>
+          <p>Richard Tetaz - Front End Developer @infomaniak - Fan de #HTML5, #CSS3, @AngularJS, @BackboneJS, #ResponsiveDesign, @yeoman et autres technos bien cools. "Hardcore devlopper / cooker", constamment en recherche de connaissances sur le d&eacute;veloppement web et d&eacute;couvertes culinaires. J'aime ce qui est ordonn&eacute; et bien fait / pens&eacute;, j'appr&eacute;cie egalement les choses limites / restrictives car je consid&egrave;re que les meilleurs projets sont souvent les plus simples.</p>
           <p><strong>Pour qui et pourquoi ce blog ?</strong></p>
-          <p>Si tu en as marre de cette soci&eacute;t&eacute; de mou du genou,</p>
+          <p>Marre de cette soci&eacute;t&eacute; de mou du genou,</p>
           <ul>
             <li>Qui pense &agrave; facilit&eacute; et vacation.</li>
             <li>Qui ach&egrave;te des surgel&eacute;s et qui r&eacute;p&egrave;te &agrave; longueur de journ&eacute;e "Je suis stress&eacute;, j'ai pas le temps".</li>
             <li>Qui se laisse bercer par les m&eacute;dias et autres idioties.</li>
             <li>Qui regarde son nombril et ne se remet jamais en question.</li>
           </ul>
-          <p>Ce blog est fait pour toi !</p>
           <p>J'&eacute;cris ce blog pour partager mes d&eacute;couvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve int&eacute;ressant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles (sauf ceux rajout&eacute;s par <a href="http://www.twitter.com/netvision73">@netvision73</a>). Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui m&ecirc;me, en faisant des <i>pull request</i>. Il est m&ecirc;me possible de corriger mes fautes d'orthographe si tu commences &agrave; avoir les yeux <span style="color: red;">rouges</span>.</p>
         </aside>
       </div>
