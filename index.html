@@ -33,13 +33,12 @@
       <div class="inner clearfix">
         <section id="main-content">
           <div ng-repeat="article in articles" ng-init="article.show=false" ng-hide="cv.show">
-            <h2><span ng-click="showArticle(article)" style="cursor: pointer;" ng-bind="article.title"></span> <a href="#" ng-click="showArticle(article)"><i ng-class="{'icon-collapse-top': article.show==false, 'icon-collapse': article.show==true}"></i></a></h2>
-            <article ng-show="article.show==true">
-              <div ng-include="" src="article.url2"></div>
+            <h2><span ng-click="showArticle(article)" style="cursor: pointer;" ng-bind="article.title"></span> <a href="#" ng-click="showArticle(article)"><i ng-class="{'icon-collapse-top': !article.show, 'icon-collapse': article.show}"></i></a></h2>
+            <article ng-show="article.show" ng-include="" src="article.url2">
             </article>
           </div>
 
-          <div ng-show="cv.show" ng-include="" src="documents/cv.html"></div>
+          <div ng-init="cv.show=false" ng-show="cv.show" ng-include="" src="documents/cv.html"></div>
 
         </section>
 
