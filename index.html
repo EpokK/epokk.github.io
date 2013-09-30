@@ -39,28 +39,7 @@
             </article>
           </div>
 
-          <div ng-show="cv.show" class="CV">
-            <h2>Formation</h2>
-            <h2>Experiences professionelles</h2>
-            <h2>Projets personnelles</h2>
-            <h2>Competences</h2>
-            <h2>Centres d'interet</h2>
-          </div>
-
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-              var disqus_shortname = 'codecuisine'; // required: replace example with your forum shortname
-
-              /* * * DON'T EDIT BELOW THIS LINE * * */
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          <div ng-show="cv.show" ng-include="" src="documents/cv.html"></div>
 
         </section>
 
@@ -69,7 +48,7 @@
           <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github-sign"></i> Fork me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="https://gist.github.com/EpokK"><i class="icon-github"></i> Gist me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
-         <!--  <div><a ng-click="cv.show==true" href="#" style="font-size: 24px;"><i class="icon-file"></i> CV</a></div> -->
+          <div><a ng-click="cv.show=true" style="font-size: 24px;"><i class="icon-file"></i> CV</a></div>
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
