@@ -30,7 +30,7 @@ myApp.controller("myCtrl", function($scope){
 
 	$scope.showCV = function() {
 		$scope.cv.show =! $scope.cv.show;
-		$scope.url = 'documents/cv.html';
+		$scope.cv.url = 'documents/cv.html';
 	};
 });
 
