@@ -538,9 +538,19 @@ pre code {
 .list-group-item.blue {
   border-left: 5px solid #0079B2;
 }
+.list-group-item.grey {
+  border-left: 5px solid #999;
+}
 .icon-red {
   color: #C00606;
+  cursor: pointer;
 }
 .icon-blue {
   color: #0079B2;
+  cursor: pointer;
+}
+em .click:hover,
+i.click:hover {
+  cursor: pointer;
+  color: #666;
 }

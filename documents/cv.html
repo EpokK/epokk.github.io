@@ -12,16 +12,19 @@
 	</div>
 	<div class="col-md-8">
 		<ul class="list-group">
-			<li class="list-group-item red" ng-show="showExperience"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2011 - Present</span> Infomaniak Network - Carouge, Geneve</li>
-			<li class="list-group-item red" ng-show="showExperience"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2008 - 2009</span> Licence Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2006 - 2008</span> DUT Reseaux &amp; Telecommunications - Universite de Savoie Annecy</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">2003 - 2006</span> Bac STI Electronique - Lycee Rene Perrin - Ugine</li>
-			<li class="list-group-item"><span class="text-muted icon-plus-sign" ng-click="expression"></span> <span class="text-muted">15 decembre 1987</span> Naissance - Albertville</li>
+			<li class="list-group-item red" ng-show="showExperience">
+				<i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2011 - Present</span> Infomaniak Network - Carouge, Geneve
+				<p>Au sein de l'equipe de developpement Infomaniak Network, je realise le front office du Webmail2 et edite plusieurs UI. Je me specialise en Javascript applicatif et HTML5 mobile.</p>
+			</li>
+			<li class="list-group-item red" ng-show="showExperience"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac</li>
+			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
+			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2008 - 2009</span> Licence Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
+			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2006 - 2008</span> DUT Reseaux &amp; Telecommunications - Universite de Savoie Annecy</li>
+			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2003 - 2006</span> Bac STI Electronique - Lycee Rene Perrin - Ugine</li>
+			<li class="list-group-item grey"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">15 decembre 1987</span> Naissance - Albertville</li>
 		</ul>
 		<p class="text-center">
-			<i class="icon-red" ng-class="{'icon-ok-sign':showExperience, 'icon-circle':!showExperience}"></i> <a href="" ng-click="showExperience=!showExperience">Experience</a> - <a href="" ng-click="showEducation=!showEducation">Education</a> <i class="icon-blue" ng-class="{'icon-ok-sign':showEducation, 'icon-circle':!showEducation}"></i>
+			<i class="icon-red" ng-click="showExperience=!showExperience" ng-class="{'icon-ok-sign':showExperience, 'icon-circle':!showExperience}"></i> <a href="" ng-click="showExperience=!showExperience">Experience</a> - <a href="" ng-click="showEducation=!showEducation">Education</a> <i class="icon-blue" ng-click="showEducation=!showEducation" ng-class="{'icon-ok-sign':showEducation, 'icon-circle':!showEducation}"></i>
 		</p>
 		<div class="row">
 			<div class="col-md-4">
