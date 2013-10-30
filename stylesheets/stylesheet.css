@@ -554,6 +554,9 @@ i.click:hover {
   cursor: pointer;
   color: #666;
 }
+span.click:hover {
+  cursor: pointer;
+}
 p.details {
   margin-bottom: 0;
   margin-top: 10px;
