@@ -532,3 +532,9 @@ i {
 pre code {
   overflow-x: auto;
 }
+.list-group-item.red {
+  border-left: 5px solid #C00606;
+}
+.list-group-item.blue {
+  border-left: 5px solid #0079B2;
+}
