@@ -17,10 +17,23 @@
 				<p class="details" ng-show="detail1">Au sein de l'equipe de developpement Infomaniak Network, je realise le front office du Webmail2 et edite plusieurs UI. Je me specialise en Javascript applicatif et HTML5 mobile.</p>
 			</li>
 			<li class="list-group-item red" ng-show="showExperience">
-				<i class="text-muted icon-plus-sign click" ng-click="detail2"></i> <span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac
-				<p class="details" ng-show="detail2">Chargé de mission en bureau d'etude pour le projet Autoroute & Tunnel du Mont Blanc : extension et refonte d’un système de vidéosurveillance par fibre optique. Planification du chantier et mise en plan des differentes infrastructures de telecommunications.</p>
+				<i class="text-muted icon-plus-sign click" ng-click="detail2=true"></i> <span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac
+				<p class="details" ng-show="detail2">Chargé de mission en bureau d'etude pour le projet Autoroute &amp; Tunnel du Mont Blanc : extension et refonte d’un système de vidéosurveillance par fibre optique. Planification du chantier et mise en plan des differentes infrastructures de telecommunications.</p>
 			</li>
-			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
+			<li class="list-group-item blue" ng-show="showEducation">
+				<i class="text-muted icon-plus-sign click" ng-click="detail3=true"></i> <span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery
+				<p class="details" ng-show="detail3">
+					<ul>
+						<li>Conception et administration des réseaux LAN, WLAN et WAN</li>
+						<li>Sécurité réseaux et systèmes informatiques, qualité de service</li>
+						<li>Réseaux d’accès xDSL, réseaux de transport IP, ATM, MPLS, SDH…, réseaux à haut débit</li>
+						<li>Téléphonie sur IP, ToIP, ToWiFi, mobilité et convergence, SIP, UMTS et 4G, IMS…</li>
+						<li>Informatique pour les télécoms &amp; réseaux : administration linux et windows, administrtion sysèmes</li>
+						<li>Systèmes répartis, développement web (PHP, MySQL), programmation objet et sur plate forme à composants (J2E)</li>
+						<li>Développements de nouveaux services réseaux et télécoms (smart phones, tablettes, géolocalisation…)</li>
+					</ul>
+				</p>
+			</li>
 			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2008 - 2009</span> Licence Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
 			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2006 - 2008</span> DUT Reseaux &amp; Telecommunications - Universite de Savoie Annecy</li>
 			<li class="list-group-item blue" ng-show="showEducation"><i class="text-muted icon-plus-sign click" ng-click="expression"></i> <span class="text-muted">2003 - 2006</span> Bac STI Electronique - Lycee Rene Perrin - Ugine</li>
@@ -72,7 +85,7 @@
 					<!-- <dt>Voyage</dt>
 					<dd class="text-muted"></dd> -->
 					<dt>Sport</dt>
-					<dd class="text-muted">Velo, natation</dd>
+					<dd class="text-muted">VTT, natation</dd>
 				</dl>
 			</div>
 		</div>
