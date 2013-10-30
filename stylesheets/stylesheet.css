@@ -549,13 +549,14 @@ pre code {
   color: #0079B2;
   cursor: pointer;
 }
-em .click:hover,
+em.click:hover,
 i.click:hover {
   cursor: pointer;
   color: #666;
 }
-span.click:hover {
+span.label.click:hover {
   cursor: pointer;
+  background-color: #666;
 }
 p.details {
   margin-bottom: 0;
