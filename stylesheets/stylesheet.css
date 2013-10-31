@@ -554,9 +554,12 @@ i.click:hover {
   cursor: pointer;
   color: #666;
 }
-span.label.click:hover {
+span.label.click {
+  background-color: #CCC;
   cursor: pointer;
-  background-color: #666;
+}
+span.label.click:hover {
+  background-color: #999;
 }
 p.details {
   margin-bottom: 0;
