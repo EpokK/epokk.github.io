@@ -4,6 +4,9 @@ myApp.controller("myCtrl", function($scope){
 	$scope.articles = [];
 	$scope.showExperience = true;
 	$scope.showEducation = true;
+	$scope.detail1 = false;
+	$scope.detail2 = false;
+	$scope.detail3 = false;
 	$scope.cv = {show: false, url: ''};
 	$scope.articles.push({url: 'articles/12.md', title: "Soupe a la creme de poireaux"});
 	$scope.articles.push({url: 'articles/11.md', title: "Moment.js"});
