@@ -565,3 +565,6 @@ p.details {
   margin-bottom: 0;
   margin-top: 10px;
 }
+.progress {
+  background-color: #DDD;
+}
