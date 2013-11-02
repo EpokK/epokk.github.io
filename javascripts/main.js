@@ -36,7 +36,7 @@ myApp.controller("myCtrl", function($scope){
 	$scope.showCV = function() {
 		$scope.cv.show =! $scope.cv.show;
 		$scope.cv.url = 'documents/cv.html';
-		$('.tooltip').tooltip();
+		$('.tooltipTarget').tooltip();
 	};
 });
 
