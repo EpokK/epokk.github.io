@@ -1,5 +1,5 @@
 myApp = angular.module("myApp", []);
-myApp.controller("myCtrl", function($scope){
+myApp.controller("myCtrl", function($scope, $timeout){
 	var countNgIncludLoaded = 0;
 	$scope.articles = [];
 	$scope.showExperience = true;
@@ -36,7 +36,9 @@ myApp.controller("myCtrl", function($scope){
 	$scope.showCV = function() {
 		$scope.cv.show =! $scope.cv.show;
 		$scope.cv.url = 'documents/cv.html';
-		$('.tooltipTarget').tooltip();
+		$timeout(function() {
+			$('.tooltipTarget').tooltip();
+		}, 1000);
 	};
 });
 
