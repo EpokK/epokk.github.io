@@ -568,3 +568,8 @@ p.details {
 .progress {
   background-color: #DDD;
 }
+.tooltipTarget {
+  float: left;
+  margin-bottom: 5px;
+  width: 30px;
+}

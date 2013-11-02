@@ -38,6 +38,7 @@ myApp.controller("myCtrl", function($scope, $timeout){
 		$scope.cv.url = 'documents/cv.html';
 		$timeout(function() {
 			$('.tooltipTarget').tooltip();
+			$('.popoverTarget').popover();
 		}, 1000);
 	};
 });
