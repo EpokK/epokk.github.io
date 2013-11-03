@@ -25,22 +25,17 @@
   <body ng-app="myApp">
     <header>
       <div class="inner">
-        <h1>Code &amp; Cuisine</h1>
+        <h1>Code &amp; Cuisine (en maintenance)</h1>
+        <h2>Du dev et de la bonne bouffe mais que.</h2>
       </div>
       <a href="https://github.com/EpokK" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
     </header>
 
-    <div id="content-wrapper" ng-controller="myCtrl">
+    <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <div ng-repeat="article in articles" ng-init="article.show=false" ng-hide="cv.show">
-            <h2><span ng-click="showArticle(article)" style="cursor: pointer;" ng-bind="article.title"></span> <a href="#" ng-click="showArticle(article)"><i ng-class="{'icon-collapse-top': !article.show, 'icon-collapse': article.show}"></i></a></h2>
-            <article ng-show="article.show" ng-include="" src="article.url2">
-            </article>
-          </div>
-
-          <div ng-show="cv.show" ng-include="" src="cv.url"></div>
-
+          <!-- VIEW -->
+          <div ng-view=""></div>
         </section>
 
         <aside id="sidebar">
@@ -48,22 +43,22 @@
           <div><a style="font-size: 24px;" target="_blank" href="https://github.com/EpokK"><i class="icon-github-sign"></i> Fork me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="https://gist.github.com/EpokK"><i class="icon-github"></i> Gist me</a></div>
           <div><a style="font-size: 24px;" target="_blank" href="http://stackoverflow.com/users/1875004/epokk"><i class="icon-stackexchange"></i> Help me</a></div>
-          <div><a href="#" ng-click="showCV()" style="font-size: 24px;"><i class="icon-file"></i> CV</a></div>
+          <div><a href="#" style="font-size: 24px;"><i class="icon-file"></i> CV</a></div>
           <hr />
           <p><strong>Qui suis-je ?</strong></p>
           <div><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Panda"></div>
-          <p>Richard Tetaz - Front End Developer @infomaniak - Fan de #HTML5, #CSS3, @AngularJS, @BackboneJS, #ResponsiveDesign, @yeoman et autres technos bien cools. "Hardcore devlopper / cooker", constamment en recherche de connaissances sur le d&eacute;veloppement web et d&eacute;couvertes culinaires. J'aime ce qui est ordonn&eacute; et bien fait / pens&eacute;, j'appr&eacute;cie egalement les choses limites / restrictives car je consid&egrave;re que les meilleurs projets sont souvent les plus simples.</p>
+          <p>Richard Tetaz - Front End Developer @infomaniak - Fan de #HTML5, #CSS3, @AngularJS, @BackboneJS, #ResponsiveDesign, @yeoman et autres technos bien cools. Constamment en recherche de connaissances sur le d&eacute;veloppement web et d&eacute;couvertes culinaires. J'aime ce qui est ordonn&eacute; et bien fait / pens&eacute;, j'appr&eacute;cie les choses limites / restrictives car je consid&egrave;re que les meilleurs projets sont souvent les plus simples.</p>
           <p><strong>Pourquoi ce blog ?</strong></p>
           <p>J'&eacute;cris ce blog pour partager mes d&eacute;couvertes et connaissances que ce soit en programmation ou en cuisine et tout ce que je trouve int&eacute;ressant. Je tape en QWERTY ce qui explique qu'il n'y est pas d'accent dans mes articles. Tous commentaires doit se faire par <a href="https://github.com/EpokK/epokk.github.io" target="_blank">le projet Github</a> lui m&ecirc;me, en faisant des <i>pull request</i>. Il est m&ecirc;me possible de corriger mes fautes d'orthographe si tu commences &agrave; avoir les yeux <span style="color: #C00606;">rouges</span>.</p>
         </aside>
       </div>
     </div>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script type="text/javascript" src="javascripts/main.js"></script>
     <script type="text/javascript" src="javascripts/showdown.min.js"></script>
-    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script type="text/javascript" src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,0 +1,5 @@
+<div ng-repeat="article in articles" ng-init="article.show=false" ng-hide="cv.show">
+	<h2><span ng-click="showArticle(article)" style="cursor: pointer;" ng-bind="article.title"></span> <a href="#" ng-click="showArticle(article)"><i ng-class="{'icon-collapse-top': !article.show, 'icon-collapse': article.show}"></i></a></h2>
+	<article ng-show="article.show" ng-include="" src="article.url2">
+	</article>
+</div>

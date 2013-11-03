@@ -1,5 +1,19 @@
 myApp = angular.module("myApp", []);
-myApp.controller("myCtrl", function($scope, $timeout){
+myApp.config(function ($routeProvider) {
+	$routeProvider
+		.when('/', {
+			templateUrl: 'views/main.html',
+			controller: 'MainCtrl'
+		})
+		.when('views/cv.html', {
+			templateUrl: 'cv.html',
+			controller: 'CvCtrl'
+		})
+		.otherwise({
+			redirectTo: '/'
+		});
+});
+myApp.controller("MainCtrl", function($scope, $timeout){
 	var countNgIncludLoaded = 0;
 	$scope.articles = [];
 	$scope.showExperience = true;
@@ -32,7 +46,9 @@ myApp.controller("myCtrl", function($scope, $timeout){
 		article.show =! article.show;
 		article.url2 = article.url;
 	};
+});
 
+myApp.controller("CvCtrl", function($scope){
 	$scope.showCV = function() {
 		$scope.cv.show =! $scope.cv.show;
 		$scope.cv.url = 'documents/cv.html';
@@ -41,6 +57,7 @@ myApp.controller("myCtrl", function($scope, $timeout){
 			$('.popoverTarget').popover();
 		}, 1000);
 	};
+
 });
 
 myApp.directive('ngBlur', function() {
