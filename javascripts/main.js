@@ -45,6 +45,7 @@ myApp.controller("MainCtrl", function($scope, $timeout){
 	$scope.showArticle = function(article) {
 		article.show =! article.show;
 		article.url2 = article.url;
+		console.log(article);
 	};
 });
 
