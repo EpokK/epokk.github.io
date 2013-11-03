@@ -15,13 +15,8 @@ myApp.config(function ($routeProvider) {
 });
 myApp.controller("MainCtrl", function($scope, $timeout){
 	var countNgIncludLoaded = 0;
+
 	$scope.articles = [];
-	$scope.showExperience = true;
-	$scope.showEducation = true;
-	$scope.detail1 = false;
-	$scope.detail2 = false;
-	$scope.detail3 = false;
-	$scope.cv = {show: false, url: ''};
 	$scope.articles.push({show:false, url: 'articles/12.md', title: "Soupe a la creme de poireaux"});
 	$scope.articles.push({show:false, url: 'articles/11.md', title: "Moment.js"});
 	// $scope.articles.push({show:false, url: 'articles/10.md', title: "Transclude tu connais ?"});
@@ -36,20 +31,29 @@ myApp.controller("MainCtrl", function($scope, $timeout){
 	$scope.articles.push({show:false, url: 'articles/1.html', title: "Le BOLD c'est la vie"});
 
 	$scope.$on('$includeContentLoaded', function(event) {
+		console.log('debut $includeContentLoaded');
 		countNgIncludLoaded++;
 		if(countNgIncludLoaded == $scope.articles.length) {
 			$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
 		}
+		console.log('fin $includeContentLoaded');
 	});
 
 	$scope.showArticle = function(article) {
+		console.log('debut showArticle');
 		article.show =! article.show;
 		article.url2 = article.url;
 		console.log(article);
+		console.log('fin showArticle');
 	};
 });
 
 myApp.controller("CvCtrl", function($scope){
+	$scope.showExperience = true;
+	$scope.showEducation = true;
+	$scope.detail1 = false;
+	$scope.detail2 = false;
+	$scope.detail3 = false;
 	$scope.showCV = function() {
 		$scope.cv.show =! $scope.cv.show;
 		$scope.cv.url = 'documents/cv.html';
