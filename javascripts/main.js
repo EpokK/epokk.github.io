@@ -17,6 +17,7 @@ myApp.controller("MainCtrl", function($scope, $timeout){
 	var countNgIncludLoaded = 0;
 
 	$scope.articles = [];
+	$scope.articles.push({show:false, url: 'articles/14.html', title: "Tuto directive part1"});
 	$scope.articles.push({show:false, url: 'articles/13.md', title: "Mini-cakes moelleux et son coeur fondant"});
 	$scope.articles.push({show:false, url: 'articles/12.md', title: "Soupe a la creme de poireaux"});
 	$scope.articles.push({show:false, url: 'articles/11.md', title: "Moment.js"});
@@ -79,5 +80,21 @@ myApp.directive('markdown', function () {
 				element.html(html);
 			}
 		}
+	};
+});
+
+app.directive('showMyPassword', function() {
+	return {
+		restrict: 'AE',
+		replace: true,
+		require: 'ngModel',
+		template: '<div class="input-prepend input-append">'+
+					  '<input ng-hide="showPassword" type="password" ng-model="password" />'+
+					  '<input ng-show="showPassword" type="text" ng-model="password" />'+
+					  '<button class="btn btndefault" type="button" ng-click="showPassword=!showPassword">'+
+					    '<i ng-hide="showPassword" class="icon-eye-open"></i>'+
+					    '<i ng-show="showPassword" class="icon-eye-close"></i>'+
+					  '</button>'+
+					'</div>'
 	};
 });

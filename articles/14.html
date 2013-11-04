@@ -1,0 +1,51 @@
+<p>Ca fait un moment que je souhaite aborder un article sur les directives d'AngularJS. Je voulais un exemple pour accompagner mes dires, un exemple simple pour que tu comprennes bien et que par la suite j'augmente la difficulte.</p>
+
+<p>Donc on va creer une directive toute conne qui permet d'afficher ou cacher un mot de passe par l'intermediaire d'un bouton. Pour info, le template utilise Bootstrap, a toi de l'adapter si tu le veux pour ton propre theme.</p>
+
+<strong>La directive</strong>
+<pre><code class="javascript">
+app.directive('showMyPassword', function() {
+  return {
+    restrict: 'AE',
+    replace: true,
+    require: 'ngModel',
+    templateUrl: 'template.html'
+  };
+});
+</code></pre>
+
+<strong>Le template de la directive</strong>
+<pre><code class="html">
+<div class="input-prepend input-append">
+  <input ng-hide="showPassword" type="password" ng-model="password" />
+  <input ng-show="showPassword" type="text" ng-model="password" />
+  <button class="btn btndefault" type="button" ng-click="showPassword=!showPassword">
+    <i ng-hide="showPassword" class="icon-eye-open"></i>
+    <i ng-show="showPassword" class="icon-eye-close"></i>
+  </button>
+</div>
+</code></pre>
+
+<strong>Son integration dans la page</strong>
+<pre><code class="html">
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="">Password</label>
+    <div class="controls">
+      <input type="text" show-my-password="" ng-model="password" />
+      <span class="help-inline" ng-bind="password"></span>
+    </div>
+  </div>
+</form>
+</code></pre>
+
+<strong>Le resultat</strong>
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="">Password</label>
+    <div class="controls">
+      <input type="text" show-my-password="" ng-model="password" />
+      <span class="help-inline" ng-bind="password"></span>
+    </div>
+  </div>
+</form>
