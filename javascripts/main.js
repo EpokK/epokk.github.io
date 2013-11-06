@@ -17,6 +17,7 @@ myApp.controller("MainCtrl", function($scope, $timeout){
 	var countNgIncludLoaded = 0;
 
 	$scope.articles = [];
+	$scope.articles.push({show:false, url: 'articles/15.md', title: "Manges le carrosse de Cendrillon!"});
 	$scope.articles.push({show:false, url: 'articles/14.html', title: "Tuto directive [PART1]"});
 	$scope.articles.push({show:false, url: 'articles/13.md', title: "Mini-cakes moelleux et son coeur fondant"});
 	$scope.articles.push({show:false, url: 'articles/12.md', title: "Soupe a la creme de poireaux"});
