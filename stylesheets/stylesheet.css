@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  background: url('../images/background.png') repeat #fff;
 }
 ol, ul {
 	list-style: none;
@@ -50,7 +51,6 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5;
-  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
@@ -531,4 +531,45 @@ i {
 }
 pre code {
   overflow-x: auto;
+}
+.list-group-item.red {
+  border-left: 5px solid #C00606;
+}
+.list-group-item.blue {
+  border-left: 5px solid #0079B2;
+}
+.list-group-item.grey {
+  border-left: 5px solid #999;
+}
+.icon-red {
+  color: #C00606;
+  cursor: pointer;
+}
+.icon-blue {
+  color: #0079B2;
+  cursor: pointer;
+}
+em.click:hover,
+i.click:hover {
+  cursor: pointer;
+  color: #666;
+}
+span.label.click {
+  background-color: #CCC;
+  cursor: pointer;
+}
+span.label.click:hover {
+  background-color: #999;
+}
+p.details {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.progress {
+  background-color: #DDD;
+}
+.tooltipTarget {
+  float: left;
+  margin-bottom: 5px;
+  width: 30px;
 }
