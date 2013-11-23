@@ -66,7 +66,12 @@ myApp.controller("CvCtrl", function($scope){
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
-    // console.log("L'ulisation de la console est interdite !");
+    $scope.$on('$includeContentLoaded', function() {
+        var codes = angular.element("pre code");
+        angular.forEach(codes, function(value, key) {
+            hljs.highlightBlock(value);
+        });
+    });
 });
 
 /* DIRECTIVES */
