@@ -1,4 +1,4 @@
-myApp = angular.module("myApp", []);
+var myApp = angular.module("myApp", []);
 myApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
@@ -13,7 +13,7 @@ myApp.config(function ($routeProvider) {
 			redirectTo: '/'
 		});
 });
-myApp.controller("MainCtrl", function($scope, $timeout){
+myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
 
 	$scope.articles = [];
@@ -33,7 +33,7 @@ myApp.controller("MainCtrl", function($scope, $timeout){
 	$scope.articles.push({show:false, url: 'articles/2.html', title: "Ma configuration pour Sublime Text"});
 	$scope.articles.push({show:false, url: 'articles/1.html', title: "Le BOLD c'est la vie"});
 
-	$scope.$on('$includeContentLoaded', function(event) {
+	$scope.$on('$includeContentLoaded', function() {
 		countNgIncludLoaded++;
 		if(countNgIncludLoaded == $scope.articles.length) {
 			$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
@@ -52,7 +52,7 @@ myApp.controller("CvCtrl", function($scope){
 	$scope.detail1 = false;
 	$scope.detail2 = false;
 	$scope.detail3 = false;
-	$scope.$on('$includeContentLoaded', function(event) {
+	$scope.$on('$includeContentLoaded', function() {
 		$('.tooltipTarget').tooltip();
 		$('.popoverTarget').popover();
 	});
