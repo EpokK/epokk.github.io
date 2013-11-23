@@ -9,10 +9,17 @@ myApp.config(function ($routeProvider) {
 			templateUrl: 'views/cv.html',
 			controller: 'CvCtrl'
 		})
+        .when('/quizz', {
+            templateUrl: 'views/quizz.html',
+            controller: 'QuizzCtrl'
+        })
 		.otherwise({
 			redirectTo: '/'
 		});
 });
+
+/* CONTROLLERS */
+
 myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
 
@@ -57,6 +64,12 @@ myApp.controller("CvCtrl", function($scope){
 		$('.popoverTarget').popover();
 	});
 });
+
+myApp.controller("QuizzCtrl", function($scope) {
+
+});
+
+/* DIRECTIVES */
 
 myApp.directive('ngBlur', function() {
 	return function( scope, elem, attrs ) {
