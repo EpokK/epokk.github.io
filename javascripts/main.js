@@ -66,12 +66,12 @@ myApp.controller("CvCtrl", function($scope){
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
-    $scope.$on('$includeContentLoaded', function() {
+    $scope.highlight = function() {
         var codes = angular.element("pre code");
         angular.forEach(codes, function(value, key) {
             hljs.highlightBlock(value);
         });
-    });
+    };
 });
 
 /* DIRECTIVES */
