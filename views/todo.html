@@ -16,18 +16,19 @@
     </div>
 </form>
 
-<div class="btn-group btn-group-lg" style="margin-bottom: 20px;">
-    <button type="button" class="btn btn-default" ng-click="sort='title';reverse=!reverse">abc</button>
-    <button type="button" class="btn btn-default" ng-click="sort='category';reverse=!reverse"><i class="icon-circle text-success"></i><i class="icon-circle text-warning"></i><i class="icon-circle text-danger"></i></button>
-    <button type="button" class="btn btn-default" ng-click="sort='favorite';reverse=!reverse"><i class="icon-star text-warning"></i></button>
-    <button type="button" class="btn btn-default" ng-click="sort='date';reverse=!reverse"><i class="icon-time"></i></button>
-</div>
+<div>
+    <div class="btn-group btn-group-lg" style="margin-bottom: 20px;">
+        <button type="button" class="btn btn-default" ng-click="sort='title';reverse=!reverse">abc</button>
+        <button type="button" class="btn btn-default" ng-click="sort='category';reverse=!reverse"><i class="icon-circle text-success"></i><i class="icon-circle text-warning"></i><i class="icon-circle text-danger"></i></button>
+        <button type="button" class="btn btn-default" ng-click="sort='favorite';reverse=!reverse"><i class="icon-star text-warning"></i></button>
+        <button type="button" class="btn btn-default" ng-click="sort='date';reverse=!reverse"><i class="icon-time"></i></button>
+    </div>
 
-<div class="input-group col-lg-4 input-group-lg pull-right">
-    <span class="input-group-addon"><i class="icon-search"></i></span>
-    <input type="search" ng-model="search" class="form-control input-lg" placeholder="Rechercher ...">
+    <div class="input-group col-lg-4 input-group-lg pull-right">
+        <span class="input-group-addon"><i class="icon-search"></i></span>
+        <input type="search" ng-model="search" class="form-control input-lg" placeholder="Rechercher ...">
+    </div>
 </div>
-
 
 <div ui-sortable ng-model="tasks" class="well" style="font-size: 25px;">
     <div ng-repeat="task in tasks | filter:search | orderBy:sort:reverse">
