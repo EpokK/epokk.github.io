@@ -17,7 +17,7 @@ myApp.config(function ($routeProvider) {
             templateUrl: 'views/quizz.html',
             controller: 'QuizzCtrl'
         })
-        .when('/quizz', {
+        .when('/todo', {
             templateUrl: 'views/todo.html',
             controller: 'TodoCtrl'
         })
@@ -75,7 +75,7 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 	};
 });
 
-myApp.controller("TodoCtrl", function($scope) {
+myApp.controller("TodoCtrl", function($scope, localStorageService) {
     $scope.tasks = localStorageService.get('localTasks');
     $scope.sort = 'title';
 
