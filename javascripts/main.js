@@ -53,15 +53,17 @@ myApp.controller("MainCtrl", function($scope){
 	};
 });
 
-myApp.controller("CvCtrl", function($scope){
+myApp.controller("CvCtrl", function($scope, $timeout){
 	$scope.showExperience = true;
 	$scope.showEducation = true;
 	$scope.detail1 = false;
 	$scope.detail2 = false;
 	$scope.detail3 = false;
 	$scope.$on('$includeContentLoaded', function() {
-		$('.tooltipTarget').tooltip();
-		$('.popoverTarget').popover();
+		$timeout(function() {
+			$('.tooltipTarget').tooltip();
+			$('.popoverTarget').popover();
+		}, 500);
 	});
 });
 
