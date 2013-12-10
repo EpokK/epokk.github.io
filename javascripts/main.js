@@ -1,4 +1,8 @@
-var myApp = angular.module("myApp", []);
+/* APP */
+var myApp = angular.module("myApp", ['ui', 'LocalStorageModule']);
+
+/* ROUTES */
+
 myApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
@@ -12,6 +16,10 @@ myApp.config(function ($routeProvider) {
         .when('/quizz', {
             templateUrl: 'views/quizz.html',
             controller: 'QuizzCtrl'
+        })
+        .when('/quizz', {
+            templateUrl: 'views/todo.html',
+            controller: 'TodoCtrl'
         })
 		.otherwise({
 			redirectTo: '/'
@@ -65,6 +73,56 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 		$('.progress').tooltip();
 		$('.popoverTarget').popover();
 	};
+});
+
+myApp.controller("TodoCtrl", function($scope) {
+    $scope.tasks = localStorageService.get('localTasks');
+    $scope.sort = 'title';
+
+    if($scope.tasks === null) {
+        $scope.tasks = [
+            {
+                title: 'Acheter du pain',
+                done: false,
+                favorite: true
+            },
+            {
+                title: 'Poster une lettre',
+                done: false
+            }
+        ];
+    }
+
+    $scope.$watch('tasks', function() {
+        localStorageService.add('localTasks', $scope.tasks);
+    }, true);
+
+    $scope.dones = function() {
+        var dones = 0;
+        angular.forEach($scope.tasks, function(value){
+            if(value.done) {
+                dones++;
+            }
+        });
+        return dones;
+    };
+
+    $scope.removeTask = function(index) {
+        $scope.tasks.splice(index, 1);
+    };
+
+    $scope.addTask = function() {
+        $scope.tasks.push({
+            title: $scope.newTask,
+            done: false,
+            date: new Date()
+        });
+        $scope.newTask = '';
+    };
+
+    $scope.onBlur = function(index) {
+        $scope.tasks[index].edit = false;
+    };
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
