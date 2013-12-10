@@ -59,13 +59,12 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 	$scope.detail1 = false;
 	$scope.detail2 = false;
 	$scope.detail3 = false;
-	$scope.$on('$includeContentLoaded', function() {
-		$timeout(function() {
-			$('.tooltipTarget').tooltip();
-			$('.progress').tooltip();
-			$('.popoverTarget').popover();
-		}, 500);
-	});
+
+	$scope.initCv = function() {
+		$('.tooltipTarget').tooltip();
+		$('.progress').tooltip();
+		$('.popoverTarget').popover();
+	};
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
