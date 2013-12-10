@@ -62,6 +62,7 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 	$scope.$on('$includeContentLoaded', function() {
 		$timeout(function() {
 			$('.tooltipTarget').tooltip();
+			$('.progress').tooltip();
 			$('.popoverTarget').popover();
 		}, 500);
 	});
