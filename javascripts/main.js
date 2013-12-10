@@ -161,19 +161,3 @@ myApp.directive('markdown', function () {
 		}
 	};
 });
-
-app.directive('showMyPassword', function() {
-	return {
-		restrict: 'AE',
-		replace: true,
-		require: 'ngModel',
-		template: '<div class="input-prepend input-append">'+
-					  '<input ng-hide="showPassword" type="password" ng-model="password" />'+
-					  '<input ng-show="showPassword" type="text" ng-model="password" />'+
-					  '<button class="btn btndefault" type="button" ng-click="showPassword=!showPassword">'+
-					    '<i ng-hide="showPassword" class="icon-eye-open"></i>'+
-					    '<i ng-show="showPassword" class="icon-eye-close"></i>'+
-					  '</button>'+
-					'</div>'
-	};
-});
