@@ -1,5 +1,5 @@
 <h1>
-    <span>Liste de course</span>
+    <span>Liste de courses</span>
 	<span class="pull-right">
 		<span ng-bind="dones()"></span> / <span ng-bind="tasks.length"></span>
 	</span>
@@ -24,7 +24,7 @@
         <button type="button" class="btn btn-default" ng-click="sort='date';reverse=!reverse"><i class="icon-time"></i></button>
     </div>
 
-    <div class="input-group col-lg-4 input-group-lg pull-right">
+    <div class="input-group col-lg-4 input-group-lg pull-right" style="padding: 0;">
         <span class="input-group-addon"><i class="icon-search"></i></span>
         <input type="search" ng-model="search" class="form-control input-lg" placeholder="Rechercher ...">
     </div>
