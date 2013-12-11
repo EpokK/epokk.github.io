@@ -107,8 +107,11 @@ myApp.controller("TodoCtrl", function($scope, localStorageService) {
         return dones;
     };
 
-    $scope.removeTask = function(index) {
-        $scope.tasks.splice(index, 1);
+    $scope.removeTask = function(task) {
+        var index = $scope.tasks.indexOf(task);
+        if(index !== -1) {
+            $scope.tasks.splice(index, 1);
+        }
     };
 
     $scope.addTask = function() {
@@ -120,8 +123,11 @@ myApp.controller("TodoCtrl", function($scope, localStorageService) {
         $scope.newTask = '';
     };
 
-    $scope.onBlur = function(index) {
-        $scope.tasks[index].edit = false;
+    $scope.onBlur = function(task) {
+        var index = $scope.tasks.indexOf(task);
+        if(index !== -1) {
+            $scope.tasks[index].edit = false;
+        }
     };
 });
 

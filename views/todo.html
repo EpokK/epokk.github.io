@@ -38,8 +38,8 @@
         <i class="icon-star text-warning" ng-click="task.favorite=false" ng-show="task.favorite"></i>
         <i class="icon-star-empty text-warning" ng-click="task.favorite=true" ng-hide="task.favorite"></i>
         <span ng-bind="task.title" ng-hide="task.edit" ng-click="task.edit=true"></span>
-        <input type="text" ng-show="task.edit" ui-event="{ blur: 'onBlur($index)'}" ng-model="task.title" />
-        <a ng-click="removeTask($index)" class="pull-right">
+        <input type="text" ng-show="task.edit" ui-event="{ blur: 'onBlur(task)'}" ng-model="task.title" />
+        <a ng-click="removeTask(task)" class="pull-right">
             <i class="icon-trash"></i>
         </a>
     </div>
