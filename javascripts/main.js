@@ -21,6 +21,10 @@ myApp.config(function ($routeProvider) {
             templateUrl: 'views/todo.html',
             controller: 'TodoCtrl'
         })
+        .when('/shop', {
+            templateUrl: 'views/shop.html',
+            controller: 'ShopCtrl'
+        })
 		.otherwise({
 			redirectTo: '/'
 		});
@@ -132,6 +136,12 @@ myApp.controller("TodoCtrl", function($scope, localStorageService) {
             $scope.tasks[index].edit = false;
         }
     };
+});
+
+myApp.controller('ShopCtrl', function($scope) {
+    $scope.articles = [
+        {name: 'panda'}
+    ];
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
