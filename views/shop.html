@@ -21,7 +21,7 @@
                     <span ng-bind="article.price"></span>
                 </td>
                 <td>
-                    <span ng-bind="Math.floor(article.price * article.quantity)"></span>
+                    <span ng-bind="totalArticle(article)"></span>
                 </td>
                 <td>
                     <button class="btn btn-default" ng-click="removeArticle(article)">
