@@ -10,11 +10,32 @@
             </tr>
         </thead>
         <tbody>
+            <tr ng-repeat="article in articles">
+                <td>
+                    <span ng-bind="article.name"></span>
+                </td>
+                <td>
+                    <input type="number" ng-model="article.quantity"/>
+                </td>
+                <td>
+                    <span ng-bind="article.price"></span>
+                </td>
+                <td>
+                    <span ng-bind="article.price * article.quantity"></span>
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="removeArticle(article)">
+                        <i class="icon-trash"></i>
+                    </button>
+                </td>
+            </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td>
+                    <span ng-bind="total()"></span>
+                </td>
                 <td></td>
             </tr>
         </tbody>

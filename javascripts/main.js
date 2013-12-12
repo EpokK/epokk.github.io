@@ -141,8 +141,25 @@ myApp.controller("TodoCtrl", function($scope, localStorageService) {
 
 myApp.controller('ShopCtrl', function($scope) {
     $scope.articles = [
-        {name: 'panda'}
+        {name: 'panda', price: 1.2, quantity: 0},
+        {name: 'renard', price: 0.8},
+        {name: 'tigre', price: 1.0}
     ];
+
+    $scope.removeArticle = function(article) {
+        var index = $scope.articles.indexOf(article);
+        if(index !== -1) {
+            $scope.articles.splice(index, 1);
+        }
+    };
+
+    $scope.total = function() {
+        var total = 0;
+        angular.each($scope.articles, function(article) {
+            total += article.price * article.quantity;
+        });
+        return total;
+    };
 });
 
 myApp.controller("QuizzCtrl", function($scope) {
