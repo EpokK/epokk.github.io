@@ -141,9 +141,9 @@ myApp.controller("TodoCtrl", function($scope, localStorageService) {
 
 myApp.controller('ShopCtrl', function($scope) {
     $scope.articles = [
-        {name: 'panda', price: 1.2, quantity: 0},
-        {name: 'renard', price: 0.8},
-        {name: 'tigre', price: 1.0}
+        {name: 'panda', price: 1.2, quantity: 1},
+        {name: 'renard', price: 0.8, quantity: 0},
+        {name: 'tigre', price: 1.0, quantity: 0}
     ];
 
     $scope.removeArticle = function(article) {
@@ -155,8 +155,8 @@ myApp.controller('ShopCtrl', function($scope) {
 
     $scope.total = function() {
         var total = 0;
-        angular.each($scope.articles, function(article) {
-            total += article.price * article.quantity;
+        angular.forEach($scope.articles, function(article) {
+            total += Math.floor(article.price * article.quantity);
         });
         return total;
     };
