@@ -76,8 +76,8 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 	$scope.age = d.getFullYear() - 1987;
 
 	$scope.initCv = function() {
-		$('.tooltipTarget').tooltip();
-		$('.progress').tooltip();
+		// $('.tooltipTarget').tooltip();
+		// $('.progress').tooltip();
 		$('.popoverTarget').popover();
 	};
 });
