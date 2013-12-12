@@ -67,13 +67,14 @@ myApp.controller("MainCtrl", function($scope){
 
 myApp.controller("CvCtrl", function($scope, $timeout){
 	var d = new Date();
+    var birthday = new Date(1987, 12, 15);
 
 	$scope.showExperience = true;
 	$scope.showEducation = true;
 	$scope.detail1 = false;
 	$scope.detail2 = false;
 	$scope.detail3 = false;
-	$scope.age = d.getFullYear() - 1987;
+	$scope.age = Math.floor((date - birthday) / 31536000000);
 
 	$scope.initCv = function() {
 		// $('.tooltipTarget').tooltip();
