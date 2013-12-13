@@ -66,7 +66,7 @@ myApp.controller("MainCtrl", function($scope){
 });
 
 myApp.controller("CvCtrl", function($scope, $timeout){
-	var d = new Date();
+	var date = new Date();
     var birthday = new Date(1987, 12, 15);
 
 	$scope.showExperience = true;
