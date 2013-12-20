@@ -1,15 +1,15 @@
 <div class="row">
-    <table class="table table-hover">
+    <h3>Votre panier</h3>
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th></th>
-                <th style="width: 75%;">Produit</th>
+                <th>Article</th>
                 <th>Prix</th>
                 <th>Quantite</th>
             </tr>
         </thead>
         <tbody>
-            <h3>Votre panier</h3>
             <tr ng-repeat="article in articles">
                 <td>
                     <button class="btn btn-default" ng-click="removeArticle(article)">
@@ -23,7 +23,7 @@
                     <span ng-bind="totalArticle(article)"></span>
                 </td>
                 <td>
-                    <input type="number" class="col-xs-2" ng-model="article.quantity"/>
+                    <input style="width: 35px;" type="number" ng-model="article.quantity"/>
                 </td>
             </tr>
             <tr>
