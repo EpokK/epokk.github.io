@@ -2,15 +2,20 @@
     <table class="table table-hover">
         <thead>
             <tr>
+                <th></th>
                 <th>Produit</th>
                 <th>Prix</th>
                 <th>Quantite</th>
-                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             <h3>Votre panier</h3>
             <tr ng-repeat="article in articles">
+                <td>
+                    <button class="btn btn-default" ng-click="removeArticle(article)">
+                        <i class="icon-trash"></i>
+                    </button>
+                </td>
                 <td>
                     <span ng-bind="article.name"></span>
                 </td>
@@ -19,11 +24,6 @@
                 </td>
                 <td>
                     <input type="number" class="col-xs-2" ng-model="article.quantity"/>
-                </td>
-                <td>
-                    <button class="btn btn-default" ng-click="removeArticle(article)">
-                        <i class="icon-trash"></i>
-                    </button>
                 </td>
             </tr>
             <tr>
