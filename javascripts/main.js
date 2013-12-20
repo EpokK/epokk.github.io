@@ -154,13 +154,13 @@ myApp.controller('ShopCtrl', function($scope) {
     };
 
    $scope.totalArticle = function(article) {
-        return Math.floor(article.price * article.quantity);
+        return article.price * article.quantity;
    };
 
     $scope.total = function() {
         var total = 0;
         angular.forEach($scope.articles, function(article) {
-            total += Math.floor(article.price * article.quantity);
+            total += article.price * article.quantity;
         });
         return total;
     };

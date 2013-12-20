@@ -10,18 +10,16 @@
             </tr>
         </thead>
         <tbody>
+            <h3>Votre panier</h3>
             <tr ng-repeat="article in articles">
                 <td>
                     <span ng-bind="article.name"></span>
                 </td>
                 <td>
-                    <input type="number" ng-model="article.quantity"/>
-                </td>
-                <td>
-                    <span ng-bind="article.price"></span>
-                </td>
-                <td>
                     <span ng-bind="totalArticle(article)"></span>
+                </td>
+                <td>
+                    <input type="number" class="col-xs-2" ng-model="article.quantity"/>
                 </td>
                 <td>
                     <button class="btn btn-default" ng-click="removeArticle(article)">
@@ -31,10 +29,11 @@
             </tr>
             <tr>
                 <td></td>
-                <td></td>
-                <td></td>
                 <td>
-                    <span style="font-weight: bold;" ng-bind="total()"></span>
+                    <b>Total articles :</b>
+                </td>
+                <td>
+                    <b><span ng-bind="total()"></span></b>
                 </td>
                 <td></td>
             </tr>
