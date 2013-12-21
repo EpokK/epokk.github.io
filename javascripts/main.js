@@ -154,17 +154,15 @@ myApp.controller('ShopCtrl', function($scope) {
     };
 
    $scope.totalArticle = function(article) {
-       console.log(article.price);
-       console.log(article.quantity);
-        return article.price * article.quantity;
+        return Math.round(article.price * article.quantity * 10) / 10;
    };
 
     $scope.total = function() {
         var total = 0;
         angular.forEach($scope.articles, function(article) {
-            total += article.price * article.quantity;
+            total += $scope.totalArticle(article);
         });
-        return total;
+        return Math.round(total * 10) / 10;
     };
 
     $scope.quantity = function() {
