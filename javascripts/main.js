@@ -154,6 +154,8 @@ myApp.controller('ShopCtrl', function($scope) {
     };
 
    $scope.totalArticle = function(article) {
+       console.log(article.price);
+       console.log(article.quantity);
         return article.price * article.quantity;
    };
 
