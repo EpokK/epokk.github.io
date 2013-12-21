@@ -1,15 +1,16 @@
 <div class="row">
     <h3>Votre panier</h3>
-    <table class="table table-striped">
-        <thead>
+    <div class="col-xs-12 col-md-8">
+        <table class="table table-striped">
+            <thead>
             <tr>
                 <th style="width: 40px;"></th>
                 <th>Article</th>
                 <th>Prix</th>
                 <th>Quantite</th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <tr ng-repeat="article in articles">
                 <td>
                     <button class="btn btn-default" ng-click="removeArticle(article)">
@@ -23,7 +24,7 @@
                     <span ng-bind="totalArticle(article)"></span>
                 </td>
                 <td>
-                    <input style="width: 35px;" type="number" ng-model="article.quantity"/>
+                    <input style="width: 35px;" min="0" type="number" ng-model="article.quantity"/>
                 </td>
             </tr>
             <tr>
@@ -36,13 +37,14 @@
                 </td>
                 <td></td>
             </tr>
-        </tbody>
-    </table>
-</div>
-<div class="row">
-    <div class="well pull-right">
-        <p class="text-center"><strong><span ng-bind="quantity()"></span> <span ng-show="total() < 2">article</span><span ng-show="total() >= 2">articles</span></strong></p>
-        <p class="text-center"><strong><span ng-bind="total()"></span> EUR</strong></p>
-        <button class="btn btn-primary">Passer la commande <i class="icon-arrow-right"></i></button>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-xs-6 col-md-4">
+        <div class="well pull-left">
+            <p class="text-center"><strong><span ng-bind="quantity()"></span> <span ng-show="total() < 2">article</span><span ng-show="total() >= 2">articles</span></strong></p>
+            <p class="text-center"><strong><span ng-bind="total()"></span> EUR</strong></p>
+            <button class="btn btn-primary">Passer la commande <i class="icon-arrow-right"></i></button>
+        </div>
     </div>
 </div>
