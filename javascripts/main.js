@@ -13,10 +13,6 @@ myApp.config(function ($routeProvider) {
 			templateUrl: 'views/cv.html',
 			controller: 'CvCtrl'
 		})
-        .when('/quizz', {
-            templateUrl: 'views/quizz.html',
-            controller: 'QuizzCtrl'
-        })
         .when('/todo', {
             templateUrl: 'views/todo.html',
             controller: 'TodoCtrl'
@@ -172,15 +168,6 @@ myApp.controller('ShopCtrl', function($scope) {
         });
         return total;
     }
-});
-
-myApp.controller("QuizzCtrl", function($scope) {
-    $scope.highlight = function() {
-        var codes = angular.element("pre code");
-        angular.forEach(codes, function(value, key) {
-            hljs.highlightBlock(value);
-        });
-    };
 });
 
 /* DIRECTIVES */
