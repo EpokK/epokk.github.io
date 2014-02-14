@@ -5,7 +5,7 @@ var myApp = angular.module("myApp", ['ui', 'LocalStorageModule']);
 
 myApp.config(function ($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/:param1', {
 			templateUrl: 'views/main.html',
 			controller: 'MainCtrl'
 		})
@@ -28,12 +28,15 @@ myApp.config(function ($routeProvider) {
 
 /* CONTROLLERS */
 
-myApp.controller("MainCtrl", function($scope){
+myApp.controller("MainCtrl", function($scope, $routeParams){
 	var countNgIncludLoaded = 0;
+    var param1 = $routeParams.param1;
 
 	$scope.articles = [];
+    // $scope.articles.push({show:false, url: 'articles/18.html', title: "Tuto directive [PART2]"});
     $scope.articles.push({show:false, url: 'articles/17.md', title: "Plus c'est gros, plus c'est bon"});
-	$scope.articles.push({show:false, url: 'articles/15.md', title: "Manges le carrosse de Cendrillon!"});
+	// $scope.articles.push({show:false, url: 'articles/16.md', title: "La bûche du pere Noël"});
+    $scope.articles.push({show:false, url: 'articles/15.md', title: "Manges le carrosse de Cendrillon!"});
 	$scope.articles.push({show:false, url: 'articles/14.html', title: "Tuto directive [PART1]"});
 	$scope.articles.push({show:false, url: 'articles/13.md', title: "Mini-cakes moelleux et son coeur fondant"});
 	$scope.articles.push({show:false, url: 'articles/12.md', title: "Soupe a la creme de poireaux"});
@@ -55,6 +58,12 @@ myApp.controller("MainCtrl", function($scope){
 			$('pre code').each(function(i, e) { hljs.highlightBlock(e); });
 		}
 	});
+
+    // $scope.$on('$viewContentLoaded', function() {
+    //     if(param1 && param1 < $scope.articles.length) {
+    //         $scope.showArticle($scope.articles[parseInt(param1) - 1]);
+    //     }
+    // });
 
 	$scope.showArticle = function(article) {
 		article.show =! article.show;
