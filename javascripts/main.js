@@ -5,10 +5,10 @@ var myApp = angular.module("myApp", ['ui', 'LocalStorageModule']);
 
 myApp.config(function ($routeProvider) {
 	$routeProvider
-		// .when('/:param1', {
-		// 	templateUrl: 'views/main.html',
-		// 	controller: 'MainCtrl'
-		// })
+		.when('/', {
+			templateUrl: 'views/main.html',
+			controller: 'MainCtrl'
+		})
 		.when('/cv', {
 			templateUrl: 'views/cv.html',
 			controller: 'CvCtrl'
