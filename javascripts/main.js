@@ -36,7 +36,7 @@ myApp.controller("MainCtrl", function($scope, $routeParams){
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
     $scope.articles.push({show:false, url: 'articles/18.html', title: "Tuto directive [PART2]"});
     $scope.articles.push({show:false, url: 'articles/17.md', title: "Plus c'est gros, plus c'est bon"});
-	$scope.articles.push({show:false, url: 'articles/16.md', title: "La bûche du pere Noël"});
+	$scope.articles.push({show:false, url: 'articles/16.md', title: "La buche du pere Noel"});
     $scope.articles.push({show:false, url: 'articles/15.md', title: "Manges le carrosse de Cendrillon!"});
 	$scope.articles.push({show:false, url: 'articles/14.html', title: "Tuto directive [PART1]"});
 	$scope.articles.push({show:false, url: 'articles/13.md', title: "Mini-cakes moelleux et son coeur fondant"});
