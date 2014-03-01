@@ -33,6 +33,7 @@ myApp.controller("MainCtrl", function($scope){
     // var param1 = $routeParams.param1;
 
 	$scope.articles = [];
+    $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
     $scope.articles.push({show:false, url: 'articles/18.html', title: "Tuto directive [PART2]"});
     $scope.articles.push({show:false, url: 'articles/17.md', title: "Plus c'est gros, plus c'est bon"});
