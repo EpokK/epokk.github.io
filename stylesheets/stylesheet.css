@@ -106,10 +106,6 @@ header h2 {
   padding-bottom: 30px;
 }
 
-#main-content {
-  width: 690px;
-}
-
 #main-content img {
   max-width: 100%;
 }
@@ -543,7 +539,6 @@ p.details {
 }
 footer {
   position: relative;
-  margin-top: 60px;
   padding-top: 20px;
   color: #9a9a9a;
   text-shadow: 0 1px 0 #fff;
