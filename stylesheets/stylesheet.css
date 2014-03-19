@@ -546,10 +546,12 @@ footer {
   border-top: 1px solid #e5e5e5;
 }
 button.btn-read {
-
+  border: 2px solid #6f5499;
+  color: #6f5499;
 }
 button.btn-read:hover {
   background-color: #6f5499;
   color: white;
   font-weight: bold;
+  border: none;
 }
