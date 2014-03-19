@@ -25,16 +25,15 @@
   <body ng-app="myApp">
     <header>
       <div class="inner">
-          <a href="#"><h1>Code &amp; Cuisine</h1></a>
+          <a href="#/"><h1>Code &amp; Cuisine</h1></a>
         <h2>Du dev et de la bonne bouffe mais pas que.</h2>
       </div>
       <a href="https://github.com/EpokK" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
       <div class="navbar">
         <div class="container">
-        <span ng-bind="test"></span>
           <ul class="nav-pills">
-            <li ng-class="{active: $route.current.scope.name=='MainCtrl'}"><a href="#">Blog</a></li>
-            <li ng-class="{active: $route.current.scope.name=='CvCtrl'}"><a href="#/cv">CV</a></li>
+            <li ng-class="{active: activetab=='/'}"><a href="#/">Blog</a></li>
+            <li ng-class="{active: activetab=='/cv'}"><a href="#/cv">CV</a></li>
             <li><a target="_blank" href="https://twitter.com/_PandaJS" title="Follow me on Twitter"><i class="icon-twitter"></i></a></li>
             <li><a target="_blank" href="https://github.com/EpokK" title="Fork me on Github"><i class="icon-github-alt"></i></a></li>
           </ul>

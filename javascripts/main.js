@@ -24,13 +24,17 @@ myApp.config(function ($routeProvider) {
 		.otherwise({
 			redirectTo: '/'
 		});
-});
+}).run(['$rootScope', '$location', function($rootScope, $location){
+    var path = function() { return $location.path();};
+    $rootScope.$watch(path, function(newVal, oldVal){
+        $rootScope.activetab = newVal;
+    });
+}]);
 
 /* CONTROLLERS */
 
-myApp.controller("MainCtrl", function($scope, $routeParams){
+myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
-    $scope.test = $routeParams;
 	$scope.articles = [];
     $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
