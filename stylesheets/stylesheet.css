@@ -545,3 +545,11 @@ footer {
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
 }
+button.btn-read {
+
+}
+button.btn-read:hover {
+  background-color: #6f5499;
+  color: white;
+  font-weight: bold;
+}
