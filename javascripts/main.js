@@ -28,9 +28,9 @@ myApp.config(function ($routeProvider) {
 
 /* CONTROLLERS */
 
-myApp.controller("MainCtrl", function($scope){
+myApp.controller("MainCtrl", function($scope, $routeParams){
 	var countNgIncludLoaded = 0;
-
+    $scope.test = $routeParams;
 	$scope.articles = [];
     $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
