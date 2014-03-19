@@ -3,9 +3,9 @@ var myApp = angular.module("myApp", ['ui', 'LocalStorageModule']);
 
 /* ROUTES */
 
-myApp.config(function ($routeProvider) {
+myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/blog', {
 			templateUrl: 'views/main.html',
 			controller: 'MainCtrl'
 		})
@@ -22,10 +22,13 @@ myApp.config(function ($routeProvider) {
             controller: 'ShopCtrl'
         })
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/blog'
 		});
-}).run(['$rootScope', '$location', function($rootScope, $location){
-    var path = function() { return $location.path();};
+}]).run(['$rootScope', '$location', function($rootScope, $location){
+    var path = function() {
+        return $location.path();
+    };
+
     $rootScope.$watch(path, function(newVal, oldVal){
         $rootScope.activetab = newVal;
     });
