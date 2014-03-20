@@ -157,7 +157,8 @@ myApp.controller('ShopCtrl', function($scope) {
     $scope.articles = [
         {name: 'panda', price: 1.2, quantity: 1},
         {name: 'renard', price: 0.8, quantity: 1},
-        {name: 'tigre', price: 1.0, quantity: 1}
+        {name: 'tigre', price: 1.0, quantity: 1},
+        {name: 'tortue', price: 0.2, quantity: 4}
     ];
 
     $scope.removeArticle = function(article) {
