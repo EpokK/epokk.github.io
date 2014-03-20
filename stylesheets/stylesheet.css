@@ -158,33 +158,6 @@ aside a.button {
   font-size: 21px;
 }
 
-/*code, pre {
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #222;
-  margin-bottom: 30px;
-  font-size: 13px;
-}
-
-code {
-  background-color: #f2f8fc;
-  border: solid 1px #dbe7f3;
-  padding: 0 3px;
-}
-
-pre {
-  padding: 20px;
-  background: #1d1f21;
-  text-shadow: none;
-  overflow: auto;
-  border: solid 1px #f2f2f2;
-}
-pre code {
-  color: #2879d0;
-  background-color: #1d1f21;
-  border: none;
-  padding: 0;
-}*/
-
 ul, ol, dl {
   margin-bottom: 20px;
 }
@@ -557,6 +530,11 @@ footer {
 button.btn-read {
   border: 2px solid #6f5499;
   color: #6f5499;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 }
 button.btn-read:hover {
   background-color: #6f5499;
