@@ -3,9 +3,9 @@ var myApp = angular.module("myApp", ['ui', 'LocalStorageModule']);
 
 /* ROUTES */
 
-myApp.config(function ($routeProvider) {
+myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/blog', {
 			templateUrl: 'views/main.html',
 			controller: 'MainCtrl'
 		})
@@ -22,15 +22,22 @@ myApp.config(function ($routeProvider) {
             controller: 'ShopCtrl'
         })
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/blog'
 		});
-});
+}]).run(['$rootScope', '$location', function($rootScope, $location){
+    var path = function() {
+        return $location.path();
+    };
+
+    $rootScope.$watch(path, function(newVal, oldVal){
+        $rootScope.activetab = newVal;
+    });
+}]);
 
 /* CONTROLLERS */
 
 myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
-
 	$scope.articles = [];
     $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
@@ -150,7 +157,8 @@ myApp.controller('ShopCtrl', function($scope) {
     $scope.articles = [
         {name: 'panda', price: 1.2, quantity: 1},
         {name: 'renard', price: 0.8, quantity: 1},
-        {name: 'tigre', price: 1.0, quantity: 1}
+        {name: 'tigre', price: 1.0, quantity: 1},
+        {name: 'tortue', price: 0.2, quantity: 4}
     ];
 
     $scope.removeArticle = function(article) {
