@@ -524,8 +524,11 @@ footer {
   padding-top: 20px;
   color: #9a9a9a;
   text-shadow: 0 1px 0 #fff;
-  background-color: #f5f5f5;
+  background-color: #747474;
   border-top: 1px solid #e5e5e5;
+}
+footer strong {
+  color: white;
 }
 button.btn-read {
   border: 2px solid #6f5499;
