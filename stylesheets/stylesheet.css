@@ -522,9 +522,8 @@ p.details {
 footer {
   position: relative;
   padding-top: 20px;
-  color: #9a9a9a;
-  text-shadow: 0 1px 0 #fff;
-  background-color: #747474;
+  color: #747474;
+  background-color: #2E3234;
   border-top: 1px solid #e5e5e5;
 }
 footer strong {
