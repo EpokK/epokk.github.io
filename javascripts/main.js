@@ -21,6 +21,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'views/shop.html',
             controller: 'ShopCtrl'
         })
+        .when('/box', {
+            templateUrl: 'views/box.html',
+            controller: 'BoxCtrl'
+        })
 		.otherwise({
 			redirectTo: '/blog'
 		});
@@ -187,6 +191,10 @@ myApp.controller('ShopCtrl', function($scope) {
         });
         return total;
     }
+});
+
+myApp.controller('BoxCtrl', function($scope) {
+
 });
 
 /* DIRECTIVES */
