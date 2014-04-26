@@ -39,11 +39,14 @@ button {
 	border: none;
 	font-size: 14px;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 button:focus,
 button:hover {
-	background-color: #F55025;
+	background-color: #FEFEFE;
+	border: 2px solid #F33503;
+	color: #FEFEFE;
 }
 
 .login {
