@@ -46,7 +46,7 @@ button:focus,
 button:hover {
 	background-color: #FEFEFE;
 	border: 2px solid #F33503;
-	color: #FEFEFE;
+	color: #F33503;
 }
 
 .login {
