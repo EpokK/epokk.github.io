@@ -12,10 +12,11 @@ input[type="email"] {
 	border: 2px solid #BDC3C8;
 	width: 250px;
 	height: 35px;
-	border-radius: 5px;
+	border-radius: 5px 0 0 5px;
 	font-size: 14px;
 	padding: 5px 10px;
 	float: left;
+	color: #297FB8;
 }
 
 input[type="text"]:focus,
@@ -95,7 +96,10 @@ button:hover {
 .login .ligne .icon {
 	background-color: #BDC3C8;
 	color: #FEFEFE;
-	padding: 6px 5px;
-	border-radius: 5px;
+	border-radius: 0 5px 5px 0;
 	float: left;
+	text-align: center;
+	width: 30px;
+	height: 35px;
+	line-height: 35px;
 }
