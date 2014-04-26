@@ -21,6 +21,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'views/shop.html',
             controller: 'ShopCtrl'
         })
+        .when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginCtrl'
+        })
 		.otherwise({
 			redirectTo: '/blog'
 		});
@@ -95,6 +99,10 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 		// $('.progress').tooltip();
 		$('.popoverTarget').popover();
 	};
+});
+
+myApp.controller("LoginCtrl", function($scope){
+
 });
 
 myApp.controller("TodoCtrl", function($scope, localStorageService) {

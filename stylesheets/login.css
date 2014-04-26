@@ -1,0 +1,101 @@
+body {
+	background-color: #297FB8;
+	height: 100%;
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+textarea, input { outline: none; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	border: 2px solid #BDC3C8;
+	width: 250px;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px 10px;
+	float: left;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+	border-color: #297FB8;
+}
+
+input[type="text"]:focus + .icon,
+input[type="password"]:focus + .icon,
+input[type="email"]:focus + .icon {
+	background-color: #297FB8;
+}
+
+button {
+	outline: none;
+	background-color: #F33503;
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+button:focus,
+button:hover {
+	background-color: #F55025;
+}
+
+.login {
+	background-color: #FEFEFE;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+.login .onglets {
+	margin-bottom: 20px;
+	height: 35px;
+}
+
+.login .onglets .onglet {
+	background-color: #DCDCDC;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	color: #FEFEFE;
+	font-weight: bold;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	cursor: pointer;
+}
+
+.login .onglets .onglet:hover {
+	color: #297FB8;
+}
+
+.login .onglets .onglet.active {
+	background-color: #FEFEFE;
+	color: #297FB8;
+	cursor: default;
+}
+
+.login .ligne {
+	margin-bottom: 20px;
+	margin-left: 100px;
+	height: 35px;
+}
+
+.login .ligne.center {
+	text-align: center;
+	margin-left: 0;
+}
+
+.login .ligne .icon {
+	background-color: #BDC3C8;
+	color: #FEFEFE;
+	padding: 6px 5px;
+	border-radius: 5px;
+	float: left;
+}
