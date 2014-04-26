@@ -25,6 +25,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'views/login.html',
             controller: 'LoginCtrl'
         })
+        .when('/box', {
+            templateUrl: 'views/box.html',
+            controller: 'BoxCtrl'
+        })
 		.otherwise({
 			redirectTo: '/blog'
 		});
@@ -43,6 +47,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
 	$scope.articles = [];
+    $scope.articles.push({show:false, url: 'articles/21.md', title: "Je te quitte, Google Musique"});
     $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
     $scope.articles.push({show:false, url: 'articles/19.md', title: "Meteor"});
     $scope.articles.push({show:false, url: 'articles/18.html', title: "Tuto directive [PART2]"});
@@ -195,6 +200,10 @@ myApp.controller('ShopCtrl', function($scope) {
         });
         return total;
     }
+});
+
+myApp.controller('BoxCtrl', function($scope) {
+
 });
 
 /* DIRECTIVES */
