@@ -106,3 +106,15 @@ button:hover {
 	height: 35px;
 	line-height: 35px;
 }
+
+.login .ligne .bubble {
+	line-height: 35px;
+}
+
+.login .ligne .bubble:first-child {
+	margin-left: 10px;
+}
+
+.login .ligne .bubble.icon-circle-blank {
+	color: #BDC3C8;
+}
