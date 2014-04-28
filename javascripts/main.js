@@ -243,11 +243,10 @@ myApp.directive('passwordMeter', function($timeout) {
     },
     templateUrl: '../views/passwordMeter.html',
     link: function link(scope, element, attrs) {
-      $('#password').complexify({
+      jQuery('#password').complexify({
         minimumChars: 6,
         strengthScaleFactor: 1
       }, function(valid, complexity) {
-        console.log(complexify);
         scope.complexity = complexity;
       });
       scope.$watch('password', function() {
