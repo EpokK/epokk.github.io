@@ -16,12 +16,9 @@
 		<span class="icon"><i class="icon-envelope"></i></span>
 	</div>
 	<div class="ligne">
-		<input placeholder="password" type="password" />
+		<input placeholder="password" type="password" ng-model="password" />
 		<span class="icon"><i class="icon-key"></i></span>
-		<i class="bubble icon-circle-blank"></i>
-		<i class="bubble icon-circle-blank"></i>
-		<i class="bubble icon-circle-blank"></i>
-		<i class="bubble icon-circle-blank"></i>
+		<span password-meter="" password="password"></span>
 	</div>
 	<div class="ligne">
 		<input placeholder="retype password" type="password" />
@@ -45,3 +42,6 @@
 		<button>Sign up</button>
 	</div>
 </div>
+
+<script type="text/javascript" src="javascripts/jquery.complexify.min.js"></script>
+<script type="text/javascript" src="javascripts/passwordMeter.js"></script>
