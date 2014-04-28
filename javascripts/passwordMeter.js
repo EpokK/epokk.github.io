@@ -7,7 +7,7 @@ myApp.directive('passwordMeter', function($timeout) {
     scope: {
       password: '='
     },
-    templateUrl: '/views/passwordMeter.html',
+    templateUrl: '../views/passwordMeter.html',
     link: function link(scope, element, attrs) {
       $(element).find('input').complexify({
         minimumChars: 6,
