@@ -247,6 +247,7 @@ myApp.directive('passwordMeter', function($timeout) {
         minimumChars: 6,
         strengthScaleFactor: 1
       }, function(valid, complexity) {
+        console.log(complexify);
         scope.complexity = complexity;
       });
       scope.$watch('password', function() {
