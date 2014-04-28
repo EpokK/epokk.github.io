@@ -115,6 +115,7 @@ button:hover {
 	margin-left: 10px;
 }
 
-.login .ligne .bubble.icon-circle-blank {
+.login .ligne .bubble.icon-circle-blank,
+.login .ligne .bubble.icon-circle {
 	color: #BDC3C8;
 }
