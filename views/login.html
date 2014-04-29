@@ -12,20 +12,20 @@
 		</div>
 	</div>
 	<div class="ligne">
-		<input placeholder="email" type="email" />
+		<input required="" placeholder="email" type="email" />
 		<span class="icon"><i class="icon-envelope"></i></span>
 	</div>
 	<div class="ligne">
-		<input placeholder="password" id="password" type="password" ng-model="password" />
-		<span class="icon"><i class="icon-key"></i></span>
+		<input required="" placeholder="password" id="password" type="password" ng-model="password" />
+		<span class="icon"><i ng-class="{'icon-lock': password == password2, 'icon-unlock': password != password2}"></i></span>
 		<div password-meter="" password="password"></div>
 	</div>
 	<div class="ligne">
-		<input placeholder="retype password" type="password" />
-		<span class="icon"><i class="icon-key"></i></span>
+		<input required="" placeholder="retype password" type="password" ng-model="password2" />
+		<span class="icon"><i ng-class="{'icon-lock': password == password2, 'icon-unlock': password != password2}"></i></span>
 	</div>
 	<div class="ligne">
-		<input placeholder="nickname" type="text" />
+		<input required="" placeholder="nickname" type="text" />
 		<span class="icon"><i class="icon-user"></i></span>
 	</div>
 	<div class="ligne" style="line-height: 35px;">
