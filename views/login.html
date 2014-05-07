@@ -13,7 +13,7 @@
 	</div>
 	<form name="register">
 		<div class="ligne">
-			<input required="" name="email" placeholder="email" type="email" />
+			<input required="" name="email" ng-model="email" placeholder="email" type="email" />
 			<span class="icon"><i ng-class="{'icon-envelope': register.email.$valid, 'icon-envelope-alt': !register.email.$valid}"></i></span>
 		</div>
 		<div class="ligne">
