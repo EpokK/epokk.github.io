@@ -16,8 +16,8 @@
 			<input required="" name="email" ng-model="email" placeholder="email" type="email" />
 			<span class="icon"><i ng-class="{'icon-envelope': register.email.$valid, 'icon-envelope-alt': !register.email.$valid}"></i></span>
 		</div>
-		<div class="ligne">
-			<input required="" placeholder="password" id="password" type="password" ng-model="password" />
+		<div class="ligne" ng-class="{'focus': focusPassword}">
+			<input required="" placeholder="password" id="password" type="password" ng-focus="focusPassword = true" ng-blur="focusPassword = false" ng-model="password" />
 			<span class="icon"><i ng-class="{'icon-lock': password == password2, 'icon-unlock': password != password2}"></i></span>
 			<div password-meter="" password="password"></div>
 		</div>

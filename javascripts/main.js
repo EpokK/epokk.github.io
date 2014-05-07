@@ -110,6 +110,7 @@ myApp.controller("LoginCtrl", function($scope){
     $scope.email = '';
     $scope.password = '';
     $scope.password2 = '';
+    $scope.focusPassword = false;
 });
 
 myApp.controller("TodoCtrl", function($scope, localStorageService) {
