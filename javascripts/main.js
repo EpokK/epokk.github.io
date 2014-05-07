@@ -107,7 +107,9 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 });
 
 myApp.controller("LoginCtrl", function($scope){
-
+    $scope.email = '';
+    $scope.password = '';
+    $scope.password2 = '';
 });
 
 myApp.controller("TodoCtrl", function($scope, localStorageService) {

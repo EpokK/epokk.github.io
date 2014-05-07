@@ -124,3 +124,8 @@ button:hover {
 .login .ligne .bubble.icon-circle {
 	color: #BDC3C8;
 }
+
+.login .ligne input:focus + .login .ligne .bubble.icon-circle-blank,
+.login .ligne input:focus + .login .ligne .bubble.icon-circle {
+	color: #297FB8;
+}
