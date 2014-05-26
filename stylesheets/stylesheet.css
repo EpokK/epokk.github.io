@@ -545,6 +545,7 @@ p.details {
   float:right;
   margin-top:20px;
   margin-bottom:0
+  list-style-type: none;
 }
 .navbar .nav-pills a {
   color: #fff;
