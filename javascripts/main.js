@@ -47,6 +47,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 myApp.controller("MainCtrl", function($scope){
 	var countNgIncludLoaded = 0;
 	$scope.articles = [];
+    $scope.articles.push({show:false, url: 'articles/23.md', title: "Filets de Fera du Léman"});
     $scope.articles.push({show:false, url: 'articles/22.md', title: "UX : humans <3 machines"});
     $scope.articles.push({show:false, url: 'articles/21.md', title: "Je te quitte, Google Musique"});
     $scope.articles.push({show:false, url: 'articles/20.md', title: "Veloute de courge"});
