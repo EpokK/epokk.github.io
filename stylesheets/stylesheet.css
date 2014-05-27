@@ -627,7 +627,7 @@ button.btn-read:hover {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.buzz:hover {
+.buzz:active {
   -webkit-animation-name: buzz;
   animation-name: buzz;
   -webkit-animation-duration: .15s;
