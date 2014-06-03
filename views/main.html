@@ -1,0 +1,6 @@
+<div ng-repeat="article in articles">
+	<h2>
+		<span ng-bind="article.title"></span> <button class="btn btn-default btn-xs btn-read buzz" ng-click="showArticle(article)"><span ng-show="!article.show">READ</span><span ng-show="article.show">CLOSE</span></button>
+	</h2>
+	<article ng-show="article.show" ng-include="" src="article.url2"></article>
+</div>
