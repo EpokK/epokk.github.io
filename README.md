@@ -1,4 +1,4 @@
-![ScreenShot](http://s12.postimg.org/qwyoshjel/logo.png)
+# Code & Cuisine
 
  * http://epokk.github.io
  * https://twitter.com/_PandaJS
