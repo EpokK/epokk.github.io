@@ -104,8 +104,6 @@ myApp.controller("CvCtrl", function($scope, $timeout){
 	$scope.age = Math.floor((date - birthday) / 31536000000);
 
 	$scope.initCv = function() {
-		// $('.tooltipTarget').tooltip();
-		// $('.progress').tooltip();
 		$('.popoverTarget').popover();
 	};
 });

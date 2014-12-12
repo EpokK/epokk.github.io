@@ -1,123 +1,139 @@
-<div class="row" ng-init="initCv()">
-	<div class="col-md-4 well">
-		<div class="text-center"><img style="border-radius: 5px;border: 5px solid #CCC;margin: 10px auto;display: block;" src="images/panda.png" alt="Moi"></div>
-		<div class="text-center"><strong>Richard Tetaz</strong></div>
+<div class="row">
+	<div class="col-md-12">
+		<div><strong>Richard Tetaz</strong></div>
 		<hr />
-		<p class="text-center"><small>Front-end web developer <a href="http://www.infomaniak.com" target="_blank">@Infomaniak</a></small></p>
-		<p class="text-center"><span ng-bind="age"></span> ans</p>
-		<ul class="list-unstyled">
+		<p>Front-end web developer <a href="http://www.infomaniak.com" target="_blank">@Infomaniak</a></p>
+		<p><span ng-bind="age"></span> ans</p>
+		<ul class="inline">
 			<li><i class="text-muted icon-map-marker"></i> Annecy - Geneve</li>
 			<li><i class="text-muted icon-envelope"></i> <a href="mailto:richard.tetaz@gmail.com">richard.tetaz@gmail.com</a></li>
 			<li><a href="https://twitter.com/_PandaJS" target="_blank"><i class="text-muted icon-twitter"></i> @_PandaJS</a></li>
 		</ul>
-		<p>Membre actif de la communauté digitale, j'aime les challenges techniques. Ma passion: développer des front offices en intégrant les meilleures pratiques. J'aime ce qui est "beau", je sais critiquer un design et je sais aussi l'améliorer. Je suis obsédé par le detail.  On me dit rigoureux, organise et proactif.</p>
-		<p>Le web est mon terrain de jeu et j'adore créer des interfaces utilisateur intuitives qui prennent l'expérience utilisateur comme priorité absolue. Le responsive design et les frameworks tels que Twitter Bootstrap sont mes armes favorites pour créer des applications web interactives, élégantes sur tous supports.</p>
-		<p>Curieux et responsable, je n'hésite pas à me remettre en question afin d'améliorer la qualité de mon travail. Je veille ainsi les dernieres évolutions et framework JS (#AngularJS, #EmberJS, #BackboneJS, #Meteor).</p>
 	</div>
-	<div class="col-md-8">
-		<ul class="list-group">
-			<li class="list-group-item red" ng-show="showExperience">
-				<span class="text-muted">2011 - Present</span> Infomaniak Network - Carouge, Geneve <span class="label label-default click" ng-click="detail1=!detail1"><i class="icon-ellipsis-horizontal"></i></span>
-				<p class="details" ng-show="detail1">Réalisation du front office Workspace (html, css, javascript). Modèle MV* d'AngularJS. Développement Javascript de canaux de communication avec un back-en PHP (REST, JSON). Tests automatisés Javascript (Jasmine, Karma). Git-flow.</p>
-				<p class="details" ng-show="detail1">Je m'occupe également des ressources humaines pour le plateau développement et celui des webdesigners.</p>
-			</li>
-			<li class="list-group-item red" ng-show="showExperience">
-				<span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac <span class="label label-default click" ng-click="detail2=!detail2"><i class="icon-ellipsis-horizontal"></i></span>
-				<p class="details" ng-show="detail2">Chargé de mission en bureau d'étude pour le projet Autoroute &amp; Tunnel du Mont Blanc : extension et refonte d’un système de vidéosurveillance par fibre optique. Planification du chantier et mise sur plan des differentes infrastructures de telecommunications.</p>
-			</li>
-			<li class="list-group-item blue" ng-show="showEducation">
-				<span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery <span class="label label-default click" ng-click="detail3=!detail3"><i class="icon-ellipsis-horizontal"></i></span>
-				<p class="details" ng-show="detail3">Réseaux GSM, Routage ATM/MPLS, Réseaux d'opérateurs, Supervision des réseaux, Création d'entreprises, WebServices</p>
-			</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted">2008 - 2009</span> Licence Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
-			<li class="list-group-item red" ng-show="showExperience"><span class="text-muted">2008</span> Myosotis Informatique - Albertville</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted">2006 - 2008</span> DUT Reseaux &amp; Telecommunications - Universite de Savoie Annecy</li>
-			<li class="list-group-item blue" ng-show="showEducation"><span class="text-muted">2003 - 2006</span> Bac STI Electronique - Lycee Rene Perrin - Ugine</li>
-			<li class="list-group-item grey"><span class="text-muted">15 decembre 1987</span> Naissance - Albertville</li>
-		</ul>
-		<p class="text-center">
-			<i class="icon-red" ng-click="showExperience=!showExperience" ng-class="{'icon-ok-sign':showExperience, 'icon-circle':!showExperience}"></i> <a href="" ng-click="showExperience=!showExperience">Experience</a> - <a href="" ng-click="showEducation=!showEducation">Education</a> <i class="icon-blue" ng-click="showEducation=!showEducation" ng-class="{'icon-ok-sign':showEducation, 'icon-circle':!showEducation}"></i>
-		</p>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="text-center">COMPETENCES</div>
-				<div class="progress progress-striped active" title="Librairies JQuery, PrototypeJS, AngularJS, Backbone, NodeJS, Grunt" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-						<span>Javascript</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="htmlboilerplate, Bootstrap, Foundation, Modernizr" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-						<span>HTML5</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="CSS3, Less, Sass" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-						<span>CSS</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="Laravel 4, Codeigniter" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span>PHP</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="Android, PhoneGap" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-						<span>Mobile</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="Scrum, Kanban" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-						<span>Gestion de projet</span>
-					</div>
-				</div>
-				<div class="progress progress-striped active" title="Developpement et Webdesign" data-toggle="tooltip">
-					<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-						<span>Recrutement</span>
-					</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<fieldset>
+			<legend>PERSONAL STATEMENT</legend>
+			<p>Membre actif de la communauté digitale, j'aime les challenges techniques. Ma passion: développer des front offices en intégrant les meilleures pratiques. J'aime ce qui est "beau", je sais critiquer un design et je sais aussi l'améliorer. Je suis obsédé par le detail.  On me dit rigoureux, organise et proactif.</p>
+			<p>Le web est mon terrain de jeu et j'adore créer des interfaces utilisateur intuitives qui prennent l'expérience utilisateur comme priorité absolue. Le responsive design et les frameworks tels que Twitter Bootstrap sont mes armes favorites pour créer des applications web interactives, élégantes sur tous supports.</p>
+			<p>Curieux et responsable, je n'hésite pas à me remettre en question afin d'améliorer la qualité de mon travail. Je veille ainsi les dernieres évolutions et framework JS (#AngularJS, #EmberJS, #BackboneJS, #Meteor).</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>SKILLS</legend>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+					<span>Librairies JQuery, PrototypeJS, AngularJS, Backbone, NodeJS, Grunt</span>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="text-center">LANGUES</div>
-				<dl>
-					<dt>Langue maternelle</dt>
-					<dd class="text-muted">Francais courant</dd>
-					<dt>Langues etrangeres</dt>
-					<dd class="text-muted">Anglais technique</dd>
-					<dd class="text-muted">Allemand notions</dd>
-					<dd class="text-muted">Chinois notions</dd>
-				</dl>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					<span>htmlboilerplate, Bootstrap, Foundation, Modernizr</span>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="text-center">HOBBIES &amp; INTERETS</div>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Cinema">
-					<i class="icon-border icon-film"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Cuisine">
-					<i class="icon-border icon-food"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Ski">
-					<i class="icon-border icon-asterisk"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Musique electro">
-					<i class="icon-border icon-headphones"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Clavier">
-					<i class="icon-border icon-keyboard"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Art">
-					<i class="icon-border icon-picture"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Humour">
-					<i class="icon-border icon-smile"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Echanger">
-					<i class="icon-border icon-comments-alt"></i>
-				</a>
-				<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Jeux">
-					<i class="icon-border icon-gamepad"></i>
-				</a>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+					<span>CSS3, Less, Sass</span>
+				</div>
 			</div>
-		</div>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span>PHP, Laravel 4, Codeigniter</span>
+				</div>
+			</div>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+					<span>Android, PhoneGap, Cordova</span>
+				</div>
+			</div>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+					<span>Gestion de projet, Scrum, Kanban</span>
+				</div>
+			</div>
+			<div class="progress progress-striped active">
+				<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+					<span>Recrutement pour Developpement et Webdesign</span>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>LANGUAGE SKILLS</legend>
+			<dl>
+				<dt>Langue maternelle</dt>
+				<dd class="text-muted">Francais courant</dd>
+				<dt>Langues etrangeres</dt>
+				<dd class="text-muted">Anglais technique</dd>
+				<dd class="text-muted">Allemand notions</dd>
+				<dd class="text-muted">Chinois notions</dd>
+			</dl>
+		</fieldset>
+
+	</div>
+
+	<div class="col-md-6">
+		<fieldset>
+			<legend>EDUCATION</legend>
+			<ul class="list-group">
+				<li class="list-group-item blue">
+					<p><span class="text-muted">2009 - 2011</span> Master Reseaux &amp; Telecommunications - Universite de Savoie Chambery</p>
+					<p class="details" ng-show="detail3">Réseaux GSM, Routage ATM/MPLS, Réseaux d'opérateurs, Supervision des réseaux, Création d'entreprises, WebServices</p>
+				</li>
+				<li class="list-group-item blue"><span class="text-muted">2008 - 2009</span> Licence Reseaux &amp; Telecommunications - Universite de Savoie Chambery</li>
+				<li class="list-group-item blue"><span class="text-muted">2006 - 2008</span> DUT Reseaux &amp; Telecommunications - Universite de Savoie Annecy</li>
+				<li class="list-group-item blue"><span class="text-muted">2003 - 2006</span> Bac STI Electronique - Lycee Rene Perrin - Ugine</li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<legend>WORK EXPERIENCE</legend>
+			<ul class="list-group">
+				<li class="list-group-item red">
+					<p><span class="text-muted">2011 - Present</span> Infomaniak Network - Carouge, Geneve</p>
+					<p class="details">Réalisation du front office Workspace (html, css, javascript). Modèle MV* d'AngularJS. Développement Javascript de canaux de communication avec un back-en PHP (REST, JSON). Tests automatisés Javascript (Jasmine, Karma). Git-flow.</p>
+					<p class="details">Je m'occupe également des ressources humaines pour le plateau développement et celui des webdesigners.</p>
+				</li>
+				<li class="list-group-item red">
+					<p><span class="text-muted">2009</span> ETDE Bouygues - Le Bourget du Lac</p>
+					<p class="details" ng-show="detail2">Chargé de mission en bureau d'étude pour le projet Autoroute &amp; Tunnel du Mont Blanc : extension et refonte d’un système de vidéosurveillance par fibre optique. Planification du chantier et mise sur plan des differentes infrastructures de telecommunications.</p>
+				</li>
+
+				<li class="list-group-item red"><span class="text-muted">2008</span> Myosotis Informatique - Albertville</li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<legend>HOBBIES &amp; INTERETS</legend>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Cinema">
+				<i class="icon-border icon-film"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Cuisine">
+				<i class="icon-border icon-food"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Ski">
+				<i class="icon-border icon-asterisk"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Musique electro">
+				<i class="icon-border icon-headphones"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Clavier">
+				<i class="icon-border icon-keyboard"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Art">
+				<i class="icon-border icon-picture"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Humour">
+				<i class="icon-border icon-smile"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Echanger">
+				<i class="icon-border icon-comments-alt"></i>
+			</a>
+			<a class="tooltipTarget" href="#" data-toggle="tooltip" title="Jeux">
+				<i class="icon-border icon-gamepad"></i>
+			</a>
+		</fieldset>
 	</div>
 </div>
