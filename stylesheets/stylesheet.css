@@ -33,6 +33,9 @@ body {
 ol, ul {
 	margin-left: 20px;
 }
+ol.list-unstyled, ul.list-unstyled {
+  margin-left: 0;
+}
 blockquote, q {
 	quotes: none;
 }
