@@ -1,7 +1,7 @@
 # Code & Cuisine
 
  * http://epokk.github.io
- * https://twitter.com/_PandaJS
+ * https://twitter.com/richard_tetaz
  * http://pandajs.me (en cours de realisation)
 
 ### Presentation
